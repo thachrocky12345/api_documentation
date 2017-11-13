@@ -1,0 +1,123 @@
+{
+    "output_directories": "../",
+    "api_base_url": "http://localhost:1234",
+    "username": "vunguyen",
+    "password": "vunguyen12345!",
+    "endpoints": [
+      {
+            "endpoint_url": "/aggregate",
+            "endpoint_description": "aggregate OVERVIEW",
+            "endpoint_title": "aggregate",
+            "endpoint_parameter": "aggregate statistics",
+            "display_url": "/aggregate",
+            "examples": [
+                {
+                    "title": "Summary stats by period of 'day', 'week', 'month', 'year' ",
+                    "url": "/aggregate?period=month",
+                    "display_url": "/aggregate",
+                    "method": "GET",
+                    "description": "Summary stats count of events",
+                    "query_parameters": {
+                            "period": {
+                                "type": "string",
+                                "description": "Period can be 'day', 'week', 'month', 'year', example period=year"
+                            },
+
+                             "user_id": {
+                                "type": "number",
+                                "description": "Only consider for events of specific user_id"
+                            }
+
+                    }
+                    ,
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Summary stats by period  week",
+                    "url": "/aggregate?period=week&user_id=6",
+                    "display_url": "/aggregate",
+                    "method": "GET",
+                    "description": "Summary stats count of events",
+
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Summary stats by period year",
+                    "url": "/aggregate?period=year&user_id=6",
+                    "display_url": "/aggregate",
+                    "method": "GET",
+                    "description": "Summary stats count of events",
+
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Summary all users",
+                    "url": "/aggregate/user",
+                    "display_url": "/aggregate/user",
+                    "method": "GET",
+                    "description": "Summary all users",
+
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Summary stats pageview for user_id = 6",
+                    "url": "/aggregate/user/6",
+                    "display_url": "/aggregate/user/<user_id>",
+                    "method": "GET",
+                    "description": "Summary stats pageview for user_id = 6",
+
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Action - Summary stats pageview actions for user_id = 6",
+                    "url": "/aggregate/user/6/action",
+                    "display_url": "/aggregate/user/<user_id>/action",
+                    "method": "GET",
+                    "description": "Summary stats pageview action for user_id = 6",
+
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Label - Summary stats pageview labels for user_id = 6",
+                    "url": "/aggregate/user/6/label",
+                    "display_url": "/aggregate/user/<user_id>/label",
+                    "method": "GET",
+                    "description": "Summary stats pageview label for user_id = 6",
+
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Action id=1 - Stats pageview action 1 for user_id = 6",
+                    "url": "/aggregate/user/6/action/1",
+                    "display_url": "/aggregate/user/<user_id>/action/<action_id>",
+                    "method": "GET",
+                    "description": "Summary stats pageview action 1 for user_id = 6",
+
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Label id=1 - Summary stats pageview label 1 for user_id = 6",
+                    "url": "/aggregate/user/6/label/1",
+                    "display_url": "/aggregate/user/<user_id>/label/<label_id>",
+                    "method": "GET",
+                    "description": "Summary stats pageview label 1 for user_id = 6",
+
+                    "headers": {},
+                    "body": null
+                }
+
+
+
+            ]
+        }
+
+    ]
+}

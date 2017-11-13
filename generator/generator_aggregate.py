@@ -31,7 +31,7 @@ def html_encode_angle_brackets(text):
 
 
 # read config file
-config_data = open('./event-config.json', mode='r').read()
+config_data = open('./aggregate-config.json', mode='r').read()
 config = json.loads(config_data)
 
 if not isinstance(config, dict):
@@ -98,7 +98,7 @@ Attribute | Type | Readonly | Nullable | Has Default
 
     # make HTTP OPTIONS call to get object information
     url = config['api_base_url'] + endpoint['endpoint_url']
-    response = requests.options(url,
+    response = requests.options(url + "/user" ,
                                 auth=(username, password),
                                 headers={
                                     'Origin': config['api_base_url']
