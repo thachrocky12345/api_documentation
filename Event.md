@@ -10,7 +10,7 @@ EVENT OVERVIEW
 
 Method | URL | Description
 --- | --- | ---
-**[GET](/documentation/endpoint/Event#list-of-50-latest-events)** | `/event` | List of 50 latest events
+**[GET](/documentation/endpoint/Event#list-of-50-latest-events)** | `/event?limit=2` | List of 50 latest events
 **[POST](/documentation/endpoint/Event#insert-contacts)** | `/contact` | Insert Contacts
 **[OPTIONS](/documentation/endpoint/Event#event-details)** | `/event` | EVENT Details
 **[GET](/documentation/endpoint/Event#event-from-the-nilead_id)** | `/event/<nilead_id>` | Event from the nilead_id
@@ -52,7 +52,7 @@ Attribute | Type | Readonly | Nullable | Has Default
 
 List of 50 latest events
 ------
-<code request-method="GET">**GET** /event</code>
+<code request-method="GET">**GET** /event?limit=2</code>
 
 List of 50 latest events
 
@@ -87,7 +87,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:42:33 GMT
+Date: Mon, 13 Nov 2017 02:44:45 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -37930,7 +37930,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: text/html
-Date: Mon, 13 Nov 2017 02:42:35 GMT
+Date: Mon, 13 Nov 2017 02:44:47 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -37963,7 +37963,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:42:37 GMT
+Date: Mon, 13 Nov 2017 02:44:49 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -38177,7 +38177,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:42:39 GMT
+Date: Mon, 13 Nov 2017 02:44:51 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
