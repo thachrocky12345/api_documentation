@@ -170,11 +170,11 @@
                 },
 
                 {
-                    "title": "Event from the nilead_id",
-                    "url": "/event/84f6e6ee-d899-480e-92f1-4c86586be62c",
-                    "display_url": "/event/<nilead_id>",
+                    "title": "Event to csv",
+                    "url": "/event/event.csv?limit=3",
+                    "display_url": "/event/event.csv",
                     "method": "GET",
-                    "description": "Event from a nilead_id",
+                    "description": "Event to csv",
                     "headers": {},
                     "body": null
                 }
