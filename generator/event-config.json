@@ -13,8 +13,8 @@
             "examples": [
                 {
                     "title": "List of 50 latest events",
-                    "url": "/event",
-                    "display_url": "/event?limit=2",
+                    "url": "/event?limit=3",
+                    "display_url": "/event",
                     "method": "GET",
                     "description": "List of 50 latest events",
                     "query_parameters": {
