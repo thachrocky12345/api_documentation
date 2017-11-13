@@ -11,7 +11,7 @@ EVENT OVERVIEW
 Method | URL | Description
 --- | --- | ---
 **[GET](/documentation/endpoint/Event#list-of-50-latest-events)** | `/event` | List of 50 latest events
-**[POST](/documentation/endpoint/Event#insert-contacts)** | `/contact` | Insert Contacts
+**[POST](/documentation/endpoint/Event#insert-events)** | `/event` | Insert events
 **[OPTIONS](/documentation/endpoint/Event#event-details)** | `/event` | EVENT Details
 **[GET](/documentation/endpoint/Event#event-from-the-nilead_id)** | `/event/<nilead_id>` | Event from the nilead_id
 
@@ -87,7 +87,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:46:49 GMT
+Date: Mon, 13 Nov 2017 02:50:25 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -194,15 +194,15 @@ Vary: Origin
 ```
 
 
-Insert Contacts
+Insert events
 ------
-<code request-method="POST">**POST** /contact</code>
+<code request-method="POST">**POST** /event</code>
 
-Insert Contacts
+Insert Events
 
 ### Example
 ```http
-POST http://159.203.64.35:6789/contact
+POST http://159.203.64.35:6789/event
 Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
 Content-Length: 4112
 Content-Type: application/json
@@ -305,21 +305,115 @@ Origin: http://159.203.64.35:6789
 ```
 
 ```http
-HTTP/1.1 404 Not Found
+HTTP/1.1 200 Ok
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
 Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
-Content-Type: text/html
-Date: Mon, 13 Nov 2017 02:46:50 GMT
+Content-Type: application/json
+Date: Mon, 13 Nov 2017 02:50:25 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
 Vary: Origin
 
-
+[
+    {
+        "app_id": null, 
+        "app_name": null, 
+        "app_version": null, 
+        "client_engine": "Blink", 
+        "client_locale": "en_US", 
+        "client_name": "Chrome", 
+        "client_type": "browser", 
+        "client_version": "61.0", 
+        "created": "2017-11-12T11:15:55.498861+00:00", 
+        "device_make": "", 
+        "device_model": "", 
+        "device_platform_name": "Windows - 10 - x64", 
+        "event_action": "https://nilead.com/articles", 
+        "event_category": "pageview", 
+        "event_context": {
+            "@context": "http://schema.org", 
+            "@id": "https://nilead.com/article/content-marketing-strategy-for-beginners", 
+            "@type": "Article", 
+            "author": {
+                "@type": "Person", 
+                "name": "Vu Nguyen"
+            }, 
+            "dateModified": "2017-08-29T12:25:19+07:00", 
+            "datePublished": "2017-08-24T13:53:43+07:00", 
+            "description": "Content marketing is not the latest trend but it&#039;s a proven strategy that really works for companies who care about building a long term communication channel with the customers. If you haven&#039;t embarked on this journey, now is the best time to start because just like coffee good content will take time to brew.", 
+            "headline": "Content marketing strategy for beginners", 
+            "image": [
+                "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/content-marketing-strategy-for-beginners-banner_1503918818_grande.jpg", 
+                "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/content-marketing-strategy-for-beginners-listing_1503918818_grande.jpg"
+            ], 
+            "keywords": "content marketing, digital marketing, content strategy, content planning, content example", 
+            "mainEntityOfPage": {
+                "@id": "https://nilead.com/article/content-marketing-strategy-for-beginners", 
+                "@type": "WebPage"
+            }, 
+            "publisher": {
+                "@type": "Organization", 
+                "logo": {
+                    "@type": "ImageObject", 
+                    "url": "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png"
+                }, 
+                "name": "Nilead"
+            }
+        }, 
+        "event_label": "/article/content-marketing-strategy-for-beginners", 
+        "event_object_id": null, 
+        "event_object_source": null, 
+        "event_subject_id": null, 
+        "event_subject_source": null, 
+        "event_timestamp": 1510485355, 
+        "event_value": 0, 
+        "event_version": "1.0", 
+        "id": 1702, 
+        "ip": "115.77.188.31", 
+        "next_nilead_id": null, 
+        "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c", 
+        "prev_nilead_id": null, 
+        "session_id": "6o0qqnfeu178gtm41sh3qgmpp6", 
+        "user_id": 1
+    }, 
+    {
+        "app_id": null, 
+        "app_name": null, 
+        "app_version": null, 
+        "client_engine": "Blink", 
+        "client_locale": "en_US", 
+        "client_name": "Chrome", 
+        "client_type": "browser", 
+        "client_version": "61.0", 
+        "created": "2017-11-12T11:03:55.466132+00:00", 
+        "device_make": "", 
+        "device_model": "", 
+        "device_platform_name": "Windows - 10 - x64", 
+        "event_action": "https://nilead.com/articles", 
+        "event_category": "pageview", 
+        "event_context": null, 
+        "event_label": "/article/content-marketing-strategy-for-beginners", 
+        "event_object_id": null, 
+        "event_object_source": null, 
+        "event_subject_id": null, 
+        "event_subject_source": null, 
+        "event_timestamp": 1510484635, 
+        "event_value": 0, 
+        "event_version": "1.0", 
+        "id": 1703, 
+        "ip": "115.77.188.31", 
+        "next_nilead_id": null, 
+        "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c", 
+        "prev_nilead_id": null, 
+        "session_id": "6o0qqnfeu178gtm41sh3qgmpp6", 
+        "user_id": 1
+    }
+]
 ```
 
 
@@ -346,7 +440,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:46:50 GMT
+Date: Mon, 13 Nov 2017 02:50:25 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -560,7 +654,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:46:50 GMT
+Date: Mon, 13 Nov 2017 02:50:26 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked

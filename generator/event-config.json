@@ -53,11 +53,11 @@
                     "body": null
                 },
                 {
-                    "title": "Insert Contacts",
-                    "url": "/contact",
-                    "display_url": "/contact",
+                    "title": "Insert events",
+                    "url": "/event",
+                    "display_url": "/event",
                     "method": "POST",
-                    "description": "Insert Contacts",
+                    "description": "Insert Events",
 
                     "headers": {
                         "Content-Type": "application/json"

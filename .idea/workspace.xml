@@ -28,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event-config.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="event-config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator/event-config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="67">
@@ -48,16 +48,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Event.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Event.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="simple_log.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator/simple_log.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generator_event.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="generator_event.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generator/generator_event.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="146" column="60" lean-forward="true" selection-start-line="146" selection-start-column="60" selection-end-line="146" selection-end-column="60" />
+            <state relative-caret-position="293">
+              <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -107,8 +97,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/generator/documentation-config.json" />
-        <option value="$PROJECT_DIR$/generator/generator_event.py" />
         <option value="$PROJECT_DIR$/generator/event-config.json" />
+        <option value="$PROJECT_DIR$/generator/generator_event.py" />
       </list>
     </option>
   </component>
@@ -527,16 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/generator_event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="146" column="60" lean-forward="true" selection-start-line="146" selection-start-column="60" selection-end-line="146" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Event.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10488">
@@ -566,6 +546,16 @@
         <state relative-caret-position="67">
           <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/generator_event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
