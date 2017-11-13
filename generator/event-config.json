@@ -1,0 +1,185 @@
+{
+    "output_directories": "../",
+    "api_base_url": "http://159.203.64.35:6789",
+    "username": "vunguyen",
+    "password": "vunguyen12345!",
+    "endpoints": [
+      {
+            "endpoint_url": "/event",
+            "endpoint_description": "EVENT OVERVIEW",
+            "endpoint_title": "Event",
+            "endpoint_parameter": "Event",
+            "display_url": "/event",
+            "examples": [
+                {
+                    "title": "List of 50 latest events",
+                    "url": "/event",
+                    "display_url": "/event",
+                    "method": "GET",
+                    "description": "List of 50 latest events",
+                    "query_parameters": {
+                            "search": {
+                                "type": "string",
+                                "description": "Currently search for app_name or device_make"
+                            },
+                            "limit": {
+                                "type": "number",
+                                "description": "You can set limit return"
+                            },
+                            "page": {
+                                "type": "number",
+                                "description": "page will go with limit, example limit=5&page=1"
+                            },
+                            "nilead_id": {
+                                "type": "string",
+                                "description": "Returns all the recursive event link to that nilead_id"
+                            },
+                             "user_id": {
+                                "type": "number",
+                                "description": "Returns all the events associate with user_id"
+                            },
+                            "start": {
+                                "type": "string",
+                                "description": "Return events start on date, example start=2017-06-01"
+                            },
+                            "end": {
+                                "type": "string",
+                                "description": "Return event end on date, example end=2017-11-01"
+                            }
+
+                    }
+                    ,
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Insert Contacts",
+                    "url": "/contact",
+                    "display_url": "/contact",
+                    "method": "POST",
+                    "description": "Insert Contacts",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                      {
+                          "event_label": "/article/content-marketing-strategy-for-beginners",
+                          "app_name": null,
+                          "ip": "115.77.188.31",
+                          "client_engine": "Blink",
+                          "app_id": null,
+                          "event_subject_source": null,
+                          "device_make": "",
+                          "session_id": "6o0qqnfeu178gtm41sh3qgmpp6",
+                          "next_nilead_id": null,
+                          "user_id": 1,
+                          "prev_nilead_id": null,
+                          "client_name": "Chrome",
+                          "event_subject_id": null,
+                          "event_category": "pageview",
+                          "event_object_id": null,
+                          "event_action": "https://nilead.com/articles",
+                          "app_version": null,
+                          "client_locale": "en_US",
+                          "event_value": 0,
+                          "event_context": {
+                              "dateModified": "2017-08-29T12:25:19+07:00 12:25",
+                              "description": "Content marketing is not the latest trend but it&#039;s a proven strategy that really works for companies who care about building a long term communication channel with the customers. If you haven&#039;t embarked on this journey, now is the best time to start because just like coffee good content will take time to brew.",
+                              "author": {
+                                  "@type": "Person",
+                                  "name": "Vu Nguyen"
+                              },
+                              "headline": "Content marketing strategy for beginners",
+                              "image": [
+                                  "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/content-marketing-strategy-for-beginners-banner_1503918818_grande.jpg",
+                                  "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/content-marketing-strategy-for-beginners-listing_1503918818_grande.jpg"
+                              ],
+                              "publisher": {
+                                  "logo": {
+                                      "url": "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png",
+                                      "@type": "ImageObject"
+                                  },
+                                  "@type": "Organization",
+                                  "name": "Nilead"
+                              },
+                              "datePublished": "2017-08-24T13:53:43+07:00 13:53",
+                              "keywords": "content marketing, digital marketing, content strategy, content planning, content example",
+                              "mainEntityOfPage": {
+                                  "@id": "https://nilead.com/article/content-marketing-strategy-for-beginners",
+                                  "@type": "WebPage"
+                              },
+                              "@context": "http://schema.org",
+                              "@id": "https://nilead.com/article/content-marketing-strategy-for-beginners",
+                              "@type": "Article"
+                          },
+                          "event_object_source": null,
+                          "device_platform_name": "Windows - 10 - x64",
+                          "created": "2017-11-12T11:15:55.498861+00:00",
+                          "device_model": "",
+                          "event_timestamp": 1510485355,
+                          "event_version": "1.0",
+                          "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c",
+                          "client_type": "browser",
+                          "client_version": "61.0"
+                      },
+                      {
+                          "event_label": "/article/content-marketing-strategy-for-beginners",
+                          "app_name": null,
+                          "ip": "115.77.188.31",
+                          "client_engine": "Blink",
+                          "app_id": null,
+                          "event_subject_source": null,
+                          "device_make": "",
+                          "session_id": "6o0qqnfeu178gtm41sh3qgmpp6",
+
+                          "next_nilead_id": null,
+                          "user_id": 1,
+                          "prev_nilead_id": null,
+                          "client_name": "Chrome",
+                          "event_subject_id": null,
+                          "event_category": "pageview",
+                          "event_object_id": null,
+                          "event_action": "https://nilead.com/articles",
+                          "app_version": null,
+                          "client_locale": "en_US",
+                          "event_value": 0,
+                          "event_context": null,
+                          "event_object_source": null,
+                          "device_platform_name": "Windows - 10 - x64",
+                          "created": "2017-11-12T11:03:55.466132+00:00",
+                          "device_model": "",
+                          "event_timestamp": 1510484635,
+                          "event_version": "1.0",
+                          "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c",
+                          "client_type": "browser",
+                          "client_version": "61.0"
+                      }
+
+                    ]
+                },
+
+                {
+                    "title": "EVENT Details",
+                    "url": "/event",
+                    "display_url": "/event",
+                    "method": "OPTIONS",
+                    "description": "event details",
+                    "headers": {},
+                    "body": null
+                },
+
+                {
+                    "title": "Event from the nilead_id",
+                    "url": "/event/84f6e6ee-d899-480e-92f1-4c86586be62c",
+                    "display_url": "/event/<nilead_id>",
+                    "method": "GET",
+                    "description": "Event from a nilead_id",
+                    "headers": {},
+                    "body": null
+                }
+            ]
+        }
+
+    ]
+}

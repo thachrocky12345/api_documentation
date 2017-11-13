@@ -1,0 +1,258 @@
+{
+    "output_directories": "../",
+    "api_base_url": "http://159.203.64.35:6789",
+    "username": "vunguyen",
+    "password": "vunguyen12345!",
+    "endpoints": [
+      {
+            "endpoint_url": "/event",
+            "endpoint_description": "EVENT OVERVIEW",
+            "endpoint_title": "Event",
+            "endpoint_parameter": "Event",
+            "display_url": "/event",
+            "examples": [
+                {
+                    "title": "List of 50 latest events",
+                    "url": "/event",
+                    "display_url": "/event",
+                    "method": "GET",
+                    "description": "List of 50 latest events",
+                    "query_parameters": {
+                            "search": {
+                                "type": "string",
+                                "description": "Fuzzy search for either contacts first_name, last_name, or username"
+                            },
+                            "parent-account-id": {
+                                "type": "number",
+                                "description": "Returns only contacts with matching parent_id"
+                            },
+                            "account-id": {
+                                "type": "number",
+                                "description": "Returns only contacts with matching account-id"
+                            },
+                            "contact-priv-level": {
+                                "type": "number",
+                                "description": "Returns only contacts with matching contact-priv-level"
+                            }
+                    }
+                    ,
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Insert Contacts",
+                    "url": "/contact",
+                    "display_url": "/contact",
+                    "method": "POST",
+                    "description": "Insert Contacts",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [{
+                            "username": "test_insert1",
+                            "first_name": "test_l",
+                            "last_name": "test_f",
+                            "contact_priv_level_id": 2,
+                            "account_id": 2,
+                            "sms": null,
+                            "can_alert_sms": false,
+                            "can_alert_email": false,
+                            "created_by": 2,
+                            "hour_format": 0,
+                            "measurement_sys_id": 1,
+                            "sms_carrier_id": null,
+                            "email": "test_insert0@email.com",
+                            "voice_phone_number": "816-800-9999",
+                            "timezone": "Pacific/Midway",
+                            "is_hidden": false,
+                            "id": 469
+
+
+                        },
+                        {
+                            "username": "test_insert2",
+                            "first_name": "test_l",
+                            "last_name": "test_f",
+                            "contact_priv_level_id": 2,
+                            "account_id": 2,
+                            "sms": null,
+                            "can_alert_sms": false,
+                            "can_alert_email": false,
+                            "created_by": 2,
+                            "hour_format": 0,
+                            "measurement_sys_id": 1,
+                            "sms_carrier_id": null,
+                            "email": "test_insert0@email.com",
+                            "voice_phone_number": "816-800-9999",
+                            "timezone": "Pacific/Midway",
+                            "is_hidden": false,
+                            "id": 470
+
+                        }
+
+                    ]
+                },
+                {
+                    "title": "Update contacts",
+                    "url": "/contact",
+                    "display_url": "/contact",
+                    "method": "POST",
+                    "description": "update contacts",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [{
+                            "username": "test_insert1",
+                            "first_name": "test_l",
+                            "last_name": "test_f",
+                            "contact_priv_level_id": 2,
+                            "account_id": 2,
+                            "sms": null,
+                            "can_alert_sms": false,
+                            "can_alert_email": false,
+                            "created_by": 2,
+                            "hour_format": 0,
+                            "measurement_sys_id": 1,
+                            "sms_carrier_id": null,
+                            "email": "test_insert0@email.com",
+                            "voice_phone_number": "816-800-9999",
+                            "timezone": "Pacific/Midway",
+                            "is_hidden": false,
+                            "id": 469
+
+
+                        },
+                        {
+                            "username": "test_insert2",
+                            "first_name": "test_l",
+                            "last_name": "test_f",
+                            "contact_priv_level_id": 2,
+                            "account_id": 2,
+                            "sms": null,
+                            "can_alert_sms": false,
+                            "can_alert_email": false,
+                            "created_by": 2,
+                            "hour_format": 0,
+                            "measurement_sys_id": 1,
+                            "sms_carrier_id": null,
+                            "email": "test_insert0@email.com",
+                            "voice_phone_number": "816-800-9999",
+                            "timezone": "Pacific/Midway",
+                            "is_hidden": false,
+                            "id": 470
+
+                        }
+                    ]
+                },
+
+                {
+                    "title": "Contacts Details",
+                    "url": "/contact",
+                    "display_url": "/contact",
+                    "method": "OPTIONS",
+                    "description": "contacts details",
+                    "headers": {},
+                    "body": null
+                },
+
+                {
+                    "title": "Contact from the contact-id",
+                    "url": "/contact/470",
+                    "display_url": "/contact/<contact_id>",
+                    "method": "GET",
+                    "description": "Contact from the contact-id",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Update Contact",
+                    "url": "/contact/470",
+                    "display_url": "/contact/<contact_id>",
+                    "method": "PUT",
+                    "description": "Update Contact",
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": {
+                            "username": "test_insert1",
+                            "first_name": "test_l",
+                            "last_name": "test_f",
+                            "contact_priv_level_id": 2,
+                            "account_id": 2,
+                            "sms": null,
+                            "can_alert_sms": false,
+                            "can_alert_email": false,
+                            "created_by": 2,
+                            "hour_format": 0,
+                            "measurement_sys_id": 1,
+                            "sms_carrier_id": null,
+                            "email": "test_insert0@email.com",
+                            "voice_phone_number": "816-800-9999",
+                            "timezone": "Pacific/Midway",
+                            "is_hidden": false,
+                            "id": 470
+                        }
+                },
+                {
+                    "title": "Delete Contact",
+                    "url": "/contact/470",
+                    "display_url": "/contact/<contact_id>",
+                    "method": "DELETE",
+                    "description": "Delete contact",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Delete Contact id 469",
+                    "url": "/contact/469",
+                    "display_url": "/contact/<contact_id>",
+                    "method": "DELETE",
+                    "description": "delete contact id 469",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Contacts Alert Setup",
+                    "url": "/contact/2/alert-setup",
+                    "display_url": "/contact/<contact-id>/alert-setup",
+                    "method": "GET",
+                    "description": "contact alert setup",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Contacts Alert Setup Details",
+                    "url": "/contact/2/alert-setup",
+                    "display_url": "/contact/<contact-id>/alert-setup",
+                    "method": "OPTIONS",
+                    "description": "contact alert setup details",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Insert or Update Contacts Alert Setup",
+                    "url": "/contact/2/alert-setup",
+                    "display_url": "/contact/<contact-id>/alert-setup",
+                    "method": "PUT",
+                    "description": "Insert or update contact alert setup",
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": {
+                            "deliver_all_rtus": null,
+                            "account_id": 2,
+                            "deliver_level_2": false,
+                            "deliver_level_3": false,
+                            "deliver_level_1": true,
+                            "deliver_all_devices": null,
+                            "id": null,
+                            "deliver_all_rules": null
+                        }
+                }
+            ]
+        }
+
+    ]
+}
