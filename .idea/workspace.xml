@@ -11,7 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/api_documentation$generator_event.coverage" NAME="generator_event Coverage Results" MODIFIED="1510541690097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
-    <SUITE FILE_PATH="coverage/api_documentation$generator_aggregate.coverage" NAME="generator_aggregate Coverage Results" MODIFIED="1510544462144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/api_documentation$generator_aggregate.coverage" NAME="generator_aggregate Coverage Results" MODIFIED="1510544888838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -22,18 +22,8 @@
       <file leaf-file-name="aggregate-config.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generator/aggregate-config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="110" column="72" lean-forward="true" selection-start-line="110" selection-start-column="72" selection-end-line="110" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aggregate statistics.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aggregate statistics.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="149">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -42,9 +32,21 @@
       <file leaf-file-name="generator_aggregate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator/generator_aggregate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-533">
-              <caret line="100" column="40" lean-forward="false" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
+            <state relative-caret-position="198">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generator_event.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/generator_event.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,6 +66,8 @@
       <find>index</find>
       <find>options</find>
       <find>aggregrate</find>
+      <find>method</find>
+      <find>aggregate statistics</find>
     </findStrings>
     <replaceStrings>
       <replace>aggregate</replace>
@@ -581,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/generator_event.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -591,24 +595,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aggregate statistics.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/generator_aggregate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-533">
-          <caret line="100" column="40" lean-forward="false" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
+        <state relative-caret-position="198">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/aggregate-config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="110" column="72" lean-forward="true" selection-start-line="110" selection-start-column="72" selection-end-line="110" selection-end-column="72" />
+        <state relative-caret-position="149">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding />
         </state>
       </provider>
