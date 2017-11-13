@@ -1,0 +1,64 @@
+https://support.google.com/analytics/answer/1033068?hl=en
+
+There are a few things we can improve:
+
+1. non-interaction event: it's interesting how Google tracks if an event is interactive or not. 
+
+ "a bounce is defined as a session containing only one interaction hit. By default, the event hit is considered an interaction hit, which means that it is included in bounce rate calculations"
+
+ "This parameter allows you to determine how you want bounce rate defined for pages on your site that also include event tracking"
+
+ --> we can act a non_interaction field to our event structure
+
+ 2. Category: A category is a name that you supply as a way to group objects that you want to track. Typically, you will use the same category name multiple times over related UI elements that you want to group under a given category.
+
+Suppose you also want to track how many times the video is downloaded. You could use:
+
+Category: "Videos"
+Action: "Downloaded"
+Label: "Gone With the Wind"
+
+3. Action: Typically, you will use the action parameter to name the type of event or interaction you want to track for a particular web object. For example, with a single "Videos" category, you can track a number of specific events with this parameter, such as:
+
+Time when the video completes load
+"Play" button clicks
+"Stop" button clicks
+"Pause" button clicks
+
+4. Label: With labels, you can provide additional information for events that you want to track, such as the movie title in the video examples above, or the name of a file when tracking downloads.
+
+Category: "Downloads"
+Action: "PDF"
+Label: "/salesForms/orderForm1.pdf"
+
+5. Action and Label best practices
+Action names should be relevant to your report data
+Use action names globally to either aggregate or distinguish user interactio
+Action does not always mean "action"
+Unique events are incremented by unique actions
+
+6. Time on page
+http://help.analyticsedge.com/googleanalytics/misunderstood-metrics-time-on-page-session-duration/
+
+Google uses the time of the next page view to determine the time you spent looking at the current page. On the last page, there is no next page recorded, so the Time on Page is unknown (recorded as 0) and the Session Duration ends when they opened the last page.
+
+Currently I don't think we are calculating this time on page, and if we do we may run into the same issue Google has. My suggestion to solve this (not ideal) is to send heartbeat ping, this is NOT an event to record however, as you may not want to record and list these heartbeat events.
+What we can do, I think, is that we somehow give each pageview a unique id, then when we send it heartbeat we can increase the duration (event_duration can be a new field?)
+
+7. Additional fields
+https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#enhanced-ecomm
+
+A few additional fields that can be of our interest:
+a. property_id/business_id
+b. data_source: Indicates the data source of the hit. Hits sent from analytics.js will have data source set to 'web'; hits sent from one of the mobile SDKs will have data source set to 'app'.
+c. campaign_name
+d. campaign_source
+e. campaign_medium
+f. campaign_keyword
+g. campaign_content
+h. campaign_id
+l. non_interaction
+k. location: Specifies the full URL (excluding anchor) of the page (this optional field is useful for getting full document path when applicable)
+m. title: The title of the page / document (this optional field is useful for pageview event to quickly get page title)
+n. content_group: You can have up to 5 content groupings, each of which has an associated index between 1 and 5, inclusive. Each content grouping can have up to 100 content groups. The value of a content group is hierarchical text delimited by '/". All leading and trailing slashes will be removed and any repeated slashes will be reduced to a single slash. For example, '/a//b/' will be converted to 'a/b' (this is similar to the tagging thing we talked about. Instead of jamming everything into context google gives you 5 fixed content grouping, each group you can then have upto 100 groups. This is interesting to consider)
+
