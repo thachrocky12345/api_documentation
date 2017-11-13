@@ -263,11 +263,6 @@ Parameter | Type | Description
         md_file.write(markdown_output)
         md_file.close()
 
-        output_file = os.path.join(
-            directory, endpoint['endpoint_parameter'] + '.html')
-        html_file = open(output_file, 'w+')
-        html_file.write(html_output)
-        html_file.close()
 
 # write out list of all pages
 json_endpoints = json.dumps(all_endpoints)
