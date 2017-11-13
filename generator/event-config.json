@@ -158,6 +158,24 @@
 
                     ]
                 },
+                {
+                    "title": "Event by object_id",
+                    "url": "/event?object_id=1",
+                    "display_url": "event?object_id=1",
+                    "method": "GET",
+                    "description": "Events by object_id",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Event by object source",
+                    "url": "/event?object_source=test",
+                    "display_url": "/event?object_source=test",
+                    "method": "GET",
+                    "description": "Events by object source",
+                    "headers": {},
+                    "body": null
+                },
 
                 {
                     "title": "EVENT Details",

@@ -12,6 +12,8 @@ Method | URL | Description
 --- | --- | ---
 **[GET](/documentation/endpoint/Event#list-of-50-latest-events)** | `/event` | List of 50 latest events
 **[POST](/documentation/endpoint/Event#insert-events)** | `/event` | Insert events
+**[GET](/documentation/endpoint/Event#event-by-object_id)** | `event?object_id=1` | Event by object_id
+**[GET](/documentation/endpoint/Event#event-by-object-source)** | `/event?object_source=test` | Event by object source
 **[OPTIONS](/documentation/endpoint/Event#event-details)** | `/event` | EVENT Details
 **[GET](/documentation/endpoint/Event#event-to-csv)** | `/event/event.csv` | Event to csv
 
@@ -87,7 +89,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:54:50 GMT
+Date: Mon, 13 Nov 2017 04:50:38 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -98,96 +100,32 @@ Vary: Origin
         "app_id": null, 
         "app_name": null, 
         "app_version": null, 
-        "client_engine": "Blink", 
-        "client_locale": "vi_VN", 
-        "client_name": "Chrome", 
+        "client_engine": "Gecko", 
+        "client_locale": "en_US", 
+        "client_name": "Firefox", 
         "client_type": "browser", 
-        "client_version": "61.0", 
-        "created": "2017-11-13T02:46:12.275042+00:00", 
+        "client_version": "56.0", 
+        "created": "2017-11-11T13:45:25.294929+00:00", 
         "device_make": "", 
         "device_model": "", 
-        "device_platform_name": "Windows - 10 - x64", 
-        "event_action": "", 
+        "device_platform_name": "Windows - 7 - x64", 
+        "event_action": "https://www.google.com/", 
         "event_category": "pageview", 
         "event_context": null, 
-        "event_label": "/", 
-        "event_object_id": null, 
-        "event_object_source": null, 
+        "event_label": "/article/choose-the-right-colors-for-your-website", 
+        "event_object_id": 1, 
+        "event_object_source": "object test", 
         "event_subject_id": null, 
         "event_subject_source": null, 
-        "event_timestamp": 1510541172, 
+        "event_timestamp": 1510407925, 
         "event_value": 0, 
         "event_version": "1.0", 
-        "id": 1701, 
-        "ip": "115.79.59.189", 
+        "id": 1718, 
+        "ip": "151.246.52.73", 
         "next_nilead_id": null, 
-        "nilead_id": "f9bf62e4-b562-4481-87d4-b946bb16bec9", 
+        "nilead_id": "1b55e65d-f438-4e5a-a148-bbded08ddd1d", 
         "prev_nilead_id": null, 
-        "session_id": "cb4opmpm84gb48vab5p6h7448k", 
-        "user_id": 6
-    }, 
-    {
-        "app_id": null, 
-        "app_name": null, 
-        "app_version": null, 
-        "client_engine": "Trident", 
-        "client_locale": "en_US", 
-        "client_name": "Internet Explorer", 
-        "client_type": "browser", 
-        "client_version": "11.0", 
-        "created": "2017-11-13T02:42:19.876923+00:00", 
-        "device_make": "", 
-        "device_model": "", 
-        "device_platform_name": "Windows - 10 - x64", 
-        "event_action": "generic-exit", 
-        "event_category": "lead", 
-        "event_context": null, 
-        "event_label": "exitIntentTrigger", 
-        "event_object_id": null, 
-        "event_object_source": null, 
-        "event_subject_id": null, 
-        "event_subject_source": null, 
-        "event_timestamp": 1510540939, 
-        "event_value": 0, 
-        "event_version": "1.0", 
-        "id": 1700, 
-        "ip": "115.79.59.189", 
-        "next_nilead_id": null, 
-        "nilead_id": "4ad5b714-7a78-41ba-8ec2-dd00e55c3ee3", 
-        "prev_nilead_id": null, 
-        "session_id": "iljp6c3vaulommehfcfe5vdthv", 
-        "user_id": 1
-    }, 
-    {
-        "app_id": null, 
-        "app_name": null, 
-        "app_version": null, 
-        "client_engine": "Trident", 
-        "client_locale": "en_US", 
-        "client_name": "Internet Explorer", 
-        "client_type": "browser", 
-        "client_version": "11.0", 
-        "created": "2017-11-13T02:42:13.779033+00:00", 
-        "device_make": "", 
-        "device_model": "", 
-        "device_platform_name": "Windows - 10 - x64", 
-        "event_action": "", 
-        "event_category": "pageview", 
-        "event_context": null, 
-        "event_label": "/", 
-        "event_object_id": null, 
-        "event_object_source": null, 
-        "event_subject_id": null, 
-        "event_subject_source": null, 
-        "event_timestamp": 1510540933, 
-        "event_value": 0, 
-        "event_version": "1.0", 
-        "id": 1699, 
-        "ip": "115.79.59.189", 
-        "next_nilead_id": null, 
-        "nilead_id": "4ad5b714-7a78-41ba-8ec2-dd00e55c3ee3", 
-        "prev_nilead_id": null, 
-        "session_id": "iljp6c3vaulommehfcfe5vdthv", 
+        "session_id": "mv8c5a5fv0jnphhacd6am14vupu", 
         "user_id": 1
     }
 ]
@@ -313,7 +251,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:54:50 GMT
+Date: Mon, 13 Nov 2017 04:50:38 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -373,7 +311,7 @@ Vary: Origin
         "event_timestamp": 1510485355, 
         "event_value": 0, 
         "event_version": "1.0", 
-        "id": 1704, 
+        "id": 1719, 
         "ip": "115.77.188.31", 
         "next_nilead_id": null, 
         "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c", 
@@ -405,12 +343,144 @@ Vary: Origin
         "event_timestamp": 1510484635, 
         "event_value": 0, 
         "event_version": "1.0", 
-        "id": 1705, 
+        "id": 1720, 
         "ip": "115.77.188.31", 
         "next_nilead_id": null, 
         "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c", 
         "prev_nilead_id": null, 
         "session_id": "6o0qqnfeu178gtm41sh3qgmpp6", 
+        "user_id": 1
+    }
+]
+```
+
+
+Event by object_id
+------
+<code request-method="GET">**GET** event?object_id=1</code>
+
+Events by object_id
+
+### Example
+```http
+GET http://159.203.64.35:6789/event?object_id=1
+Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
+Host: 159.203.64.35:6789
+Origin: http://159.203.64.35:6789
+```
+
+```http
+HTTP/1.1 200 Ok
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
+Access-Control-Allow-Origin: http://159.203.64.35:6789
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, must-revalidate
+Content-Type: application/json
+Date: Mon, 13 Nov 2017 04:50:39 GMT
+Expires: 0
+Server: TwistedWeb/17.1.0
+Transfer-Encoding: chunked
+Vary: Origin
+
+[
+    {
+        "app_id": null, 
+        "app_name": null, 
+        "app_version": null, 
+        "client_engine": "Gecko", 
+        "client_locale": "en_US", 
+        "client_name": "Firefox", 
+        "client_type": "browser", 
+        "client_version": "56.0", 
+        "created": "2017-11-11T13:45:25.294929+00:00", 
+        "device_make": "", 
+        "device_model": "", 
+        "device_platform_name": "Windows - 7 - x64", 
+        "event_action": "https://www.google.com/", 
+        "event_category": "pageview", 
+        "event_context": null, 
+        "event_label": "/article/choose-the-right-colors-for-your-website", 
+        "event_object_id": 1, 
+        "event_object_source": "object test", 
+        "event_subject_id": null, 
+        "event_subject_source": null, 
+        "event_timestamp": 1510407925, 
+        "event_value": 0, 
+        "event_version": "1.0", 
+        "id": 1718, 
+        "ip": "151.246.52.73", 
+        "next_nilead_id": null, 
+        "nilead_id": "1b55e65d-f438-4e5a-a148-bbded08ddd1d", 
+        "prev_nilead_id": null, 
+        "session_id": "mv8c5a5fv0jnphhacd6am14vupu", 
+        "user_id": 1
+    }
+]
+```
+
+
+Event by object source
+------
+<code request-method="GET">**GET** /event?object_source=test</code>
+
+Events by object source
+
+### Example
+```http
+GET http://159.203.64.35:6789/event?object_source=test
+Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
+Host: 159.203.64.35:6789
+Origin: http://159.203.64.35:6789
+```
+
+```http
+HTTP/1.1 200 Ok
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
+Access-Control-Allow-Origin: http://159.203.64.35:6789
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, must-revalidate
+Content-Type: application/json
+Date: Mon, 13 Nov 2017 04:50:39 GMT
+Expires: 0
+Server: TwistedWeb/17.1.0
+Transfer-Encoding: chunked
+Vary: Origin
+
+[
+    {
+        "app_id": null, 
+        "app_name": null, 
+        "app_version": null, 
+        "client_engine": "Gecko", 
+        "client_locale": "en_US", 
+        "client_name": "Firefox", 
+        "client_type": "browser", 
+        "client_version": "56.0", 
+        "created": "2017-11-11T13:45:25.294929+00:00", 
+        "device_make": "", 
+        "device_model": "", 
+        "device_platform_name": "Windows - 7 - x64", 
+        "event_action": "https://www.google.com/", 
+        "event_category": "pageview", 
+        "event_context": null, 
+        "event_label": "/article/choose-the-right-colors-for-your-website", 
+        "event_object_id": 1, 
+        "event_object_source": "object test", 
+        "event_subject_id": null, 
+        "event_subject_source": null, 
+        "event_timestamp": 1510407925, 
+        "event_value": 0, 
+        "event_version": "1.0", 
+        "id": 1718, 
+        "ip": "151.246.52.73", 
+        "next_nilead_id": null, 
+        "nilead_id": "1b55e65d-f438-4e5a-a148-bbded08ddd1d", 
+        "prev_nilead_id": null, 
+        "session_id": "mv8c5a5fv0jnphhacd6am14vupu", 
         "user_id": 1
     }
 ]
@@ -440,7 +510,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 02:54:50 GMT
+Date: Mon, 13 Nov 2017 04:50:39 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -654,16 +724,14 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: text/csv
-Date: Mon, 13 Nov 2017 02:54:50 GMT
+Date: Mon, 13 Nov 2017 04:50:39 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
 Vary: Origin
 
 "app_id","app_name","app_version","client_engine","client_locale","client_name","client_type","client_version","created","device_make","device_model","device_platform_name","event_action","event_category","event_context","event_label","event_object_id","event_object_source","event_subject_id","event_subject_source","event_timestamp","event_value","event_version","id","ip","next_nilead_id","nilead_id","prev_nilead_id","session_id","user_id"
-"","","","Blink","vi_VN","Chrome","browser","61.0","2017-11-13 02:46:12.275042+00:00","","","Windows - 10 - x64","","pageview","","/","","","","",1510541172,0,"1.0",1701,"115.79.59.189","","f9bf62e4-b562-4481-87d4-b946bb16bec9","","cb4opmpm84gb48vab5p6h7448k",6
-"","","","Trident","en_US","Internet Explorer","browser","11.0","2017-11-13 02:42:19.876923+00:00","","","Windows - 10 - x64","generic-exit","lead","","exitIntentTrigger","","","","",1510540939,0,"1.0",1700,"115.79.59.189","","4ad5b714-7a78-41ba-8ec2-dd00e55c3ee3","","iljp6c3vaulommehfcfe5vdthv",1
-"","","","Trident","en_US","Internet Explorer","browser","11.0","2017-11-13 02:42:13.779033+00:00","","","Windows - 10 - x64","","pageview","","/","","","","",1510540933,0,"1.0",1699,"115.79.59.189","","4ad5b714-7a78-41ba-8ec2-dd00e55c3ee3","","iljp6c3vaulommehfcfe5vdthv",1
+"","","","Gecko","en_US","Firefox","browser","56.0","2017-11-11 13:45:25.294929+00:00","","","Windows - 7 - x64","https://www.google.com/","pageview","","/article/choose-the-right-colors-for-your-website",1,"object test","","",1510407925,0,"1.0",1718,"151.246.52.73","","1b55e65d-f438-4e5a-a148-bbded08ddd1d","","mv8c5a5fv0jnphhacd6am14vupu",1
 
 ```
 
