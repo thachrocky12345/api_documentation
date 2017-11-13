@@ -36,7 +36,7 @@
                 {
                     "title": "Summary stats by period  week",
                     "url": "/aggregate?period=week&user_id=6",
-                    "display_url": "/aggregate",
+                    "display_url": "/aggregate?period=week&user_id=6",
                     "method": "GET",
                     "description": "Summary stats count of events",
 
@@ -46,7 +46,7 @@
                 {
                     "title": "Summary stats by period year",
                     "url": "/aggregate?period=year&user_id=6",
-                    "display_url": "/aggregate",
+                    "display_url": "/aggregate?period=year&user_id=6",
                     "method": "GET",
                     "description": "Summary stats count of events",
 

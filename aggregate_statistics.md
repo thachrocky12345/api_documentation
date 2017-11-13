@@ -11,8 +11,8 @@ aggregate OVERVIEW
 Method | URL | Description
 --- | --- | ---
 **[GET](/documentation/endpoint/aggregate_statistics#summary-stats-by-period-of-'day',-'week',-'month',-'year')** | `/aggregate` | Summary stats by period of 'day', 'week', 'month', 'year' 
-**[GET](/documentation/endpoint/aggregate_statistics#summary-stats-by-period--week)** | `/aggregate` | Summary stats by period  week
-**[GET](/documentation/endpoint/aggregate_statistics#summary-stats-by-period-year)** | `/aggregate` | Summary stats by period year
+**[GET](/documentation/endpoint/aggregate_statistics#summary-stats-by-period--week)** | `/aggregate?period=week&user_id=6` | Summary stats by period  week
+**[GET](/documentation/endpoint/aggregate_statistics#summary-stats-by-period-year)** | `/aggregate?period=year&user_id=6` | Summary stats by period year
 **[GET](/documentation/endpoint/aggregate_statistics#summary-all-users)** | `/aggregate/user` | Summary all users
 **[GET](/documentation/endpoint/aggregate_statistics#summary-stats-pageview-for-user_id-=-6)** | `/aggregate/user/<user_id>` | Summary stats pageview for user_id = 6
 **[GET](/documentation/endpoint/aggregate_statistics#action---summary-stats-pageview-actions-for-user_id-=-6)** | `/aggregate/user/<user_id>/action` | Action - Summary stats pageview actions for user_id = 6
@@ -61,7 +61,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:08 GMT
+Date: Mon, 13 Nov 2017 03:49:54 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -91,7 +91,7 @@ Vary: Origin
 
 Summary stats by period  week
 ------
-<code request-method="GET">**GET** /aggregate</code>
+<code request-method="GET">**GET** /aggregate?period=week&user_id=6</code>
 
 Summary stats count of events
 
@@ -112,7 +112,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:09 GMT
+Date: Mon, 13 Nov 2017 03:49:55 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -158,7 +158,7 @@ Vary: Origin
 
 Summary stats by period year
 ------
-<code request-method="GET">**GET** /aggregate</code>
+<code request-method="GET">**GET** /aggregate?period=year&user_id=6</code>
 
 Summary stats count of events
 
@@ -179,7 +179,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:09 GMT
+Date: Mon, 13 Nov 2017 03:49:55 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -222,7 +222,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:09 GMT
+Date: Mon, 13 Nov 2017 03:49:55 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -1706,7 +1706,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:09 GMT
+Date: Mon, 13 Nov 2017 03:49:55 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -1928,7 +1928,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:09 GMT
+Date: Mon, 13 Nov 2017 03:49:55 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -2963,7 +2963,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:09 GMT
+Date: Mon, 13 Nov 2017 03:49:55 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -4254,7 +4254,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:09 GMT
+Date: Mon, 13 Nov 2017 03:49:55 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -4327,7 +4327,7 @@ Access-Control-Allow-Origin: http://localhost:1234
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Mon, 13 Nov 2017 03:48:10 GMT
+Date: Mon, 13 Nov 2017 03:49:56 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
