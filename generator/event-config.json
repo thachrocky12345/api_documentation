@@ -18,10 +18,14 @@
                     "method": "GET",
                     "description": "List of 50 latest events",
                     "query_parameters": {
-                            "search": {
+                            "object_source": {
                                 "type": "string",
-                                "description": "Currently search for app_name or device_make"
+                                "description": "filter all events by the object_source, example: object_source=test%20"
                             },
+                            "object_id": {
+                                    "type": "number",
+                                    "description": "filter events by object_id"
+                                },
                             "limit": {
                                 "type": "number",
                                 "description": "You can set limit return"
