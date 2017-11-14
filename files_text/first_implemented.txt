@@ -1,0 +1,7 @@
+1. non_interaction
+2. campaign_name
+3. campaign_source
+4. campaign_medium
+5. campaign_keyword
+6. campaign_content
+7. campaign_id
