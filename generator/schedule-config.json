@@ -1,0 +1,117 @@
+{
+    "output_directories": "../schedule_service/",
+    "api_base_url": "http://159.203.64.35:6789/service",
+    "username": "vunguyen",
+    "password": "vunguyen12345!",
+    "endpoints": [
+      {
+            "endpoint_url": "/store",
+            "endpoint_description": "STORE OVERVIEW",
+            "endpoint_title": "Store",
+            "endpoint_parameter": "Store",
+            "display_url": "/store",
+            "examples": [
+                {
+                    "title": "List all store of a business including employees",
+                    "url": "/store",
+                    "display_url": "/store",
+                    "method": "GET",
+                    "description": "List all store of a business including employees",
+                    "query_parameters": {
+                            "search": {
+                                "type": "string",
+                                "description": "Search for store name or address"
+                            },
+                            "limit": {
+                                "type": "number",
+                                "description": "You can set limit return"
+                            },
+                            "page": {
+                                "type": "number",
+                                "description": "page will go with limit, example limit=5&page=1"
+                            },
+                            "store_id": {
+                                "type": "int",
+                                "description": "Returns store with specific id, you also can use store/<store_id>"
+                            }
+
+                    }
+                    ,
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Show a store by id including employees",
+                    "url": "/store/1",
+                    "display_url": "/store/<store_id>",
+                    "method": "GET",
+                    "description": "Show a store by id including employees",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Insert Store",
+                    "url": "/store",
+                    "display_url": "/store",
+                    "method": "POST",
+                    "description": "You can Insert a list of Stores or 1 store",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                        {
+                            "city": "Gladstone",
+                            "name": "StoreA",
+                            "zipcode": 64118,
+                            "email": "thachrocky@icloud.com",
+                            "phone": "816-803-1523",
+                            "state": "MO",
+                            "address": "7625 N Wabash Ave",
+                            "id": 3
+                        }
+                        ]
+                },
+                {
+                    "title": "Update Store",
+                    "url": "/store",
+                    "display_url": "/store",
+                    "method": "PUT",
+                    "description": "You can Update a list of Stores or 1 store, store's id must included",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                        {
+                            "city": "Gladstone",
+                            "name": "StoreTest",
+                            "zipcode": 64118,
+                            "email": "thachrocky@icloud.com",
+                            "phone": "816-803-1523",
+                            "state": "MO",
+                            "address": "7625 N Wabash Ave",
+                            "id": 3
+                        }
+                        ]
+                },
+                {
+                    "title": "DELETE Store",
+                    "url": "/store",
+                    "display_url": "/store",
+                    "method": "DELETE",
+                    "description": "You can DELETE a list of Stores or 1 store, store's id must included",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": {
+
+                        "id": 3
+                    }
+                }
+            ]
+        }
+
+    ]
+}
