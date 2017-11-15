@@ -1,7 +1,7 @@
-1. non_interaction: {Bool} true/false - a bounce is defined as a session containing only one interaction hit. We can extend it further to define an interaction hit as an event that the customer init intentionally.
-2. campaign_name {String}
-3. campaign_source {String}
-4. campaign_medium {String}
-5. campaign_keyword {String}
-6. campaign_content {String}
-7. campaign_id {String}
+1. non_interaction: {Bool} true/false - default false a bounce is defined as a session containing only one interaction hit. We can extend it further to define an interaction hit as an event that the customer init intentionally.
+2. campaign_name {String} - default empty
+3. campaign_source {String} - default empty
+4. campaign_medium {String} - default empty
+5. campaign_keyword {String} - default empty
+6. campaign_content {String} - default empty
+7. campaign_id {String} - default empty
