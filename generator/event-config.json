@@ -182,11 +182,11 @@
                 },
 
                 {
-                    "title": "EVENT Details",
-                    "url": "/event",
-                    "display_url": "/event",
-                    "method": "OPTIONS",
-                    "description": "event details",
+                    "title": "EVENT CATEGORY",
+                    "url": "/event/category",
+                    "display_url": "/event/category",
+                    "method": "GET",
+                    "description": "Distinct category order by alphabet",
                     "headers": {},
                     "body": null
                 },
