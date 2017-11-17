@@ -4,6 +4,134 @@
     "username": "vunguyen",
     "password": "vunguyen12345!",
     "endpoints": [
+                    {
+                          "endpoint_url": "/store/1/employee/1/schedule",
+                          "endpoint_description": "SCHEDULE OVERVIEW",
+                          "endpoint_title": "Employee Schedules are generated from 7 weekday",
+                          "endpoint_parameter": "Schedule",
+                          "display_url": "/store/1/employee/1/schedule",
+                          "examples": [
+                              {
+                                  "title": "List all schedules of a employee",
+                                  "url": "/store/1/employee/1/schedule",
+                                  "display_url": "/store/<store-id>/employee/<employee-id>/schedule",
+                                  "method": "GET",
+                                  "description": "List all schedules of a employee",
+                                  "headers": {},
+                                  "body": null
+                              },
+                              {
+                                  "title": "Show today schedule id of a employee",
+                                  "url": "/store/1/employee/1/schedule/today",
+                                  "display_url": "/store/<store_id>/employee/<employee-id>/schedule/today",
+                                  "method": "GET",
+                                  "description": "Show  today schedule id of a employee",
+                                  "headers": {},
+                                  "body": null
+                              },
+                              {
+                                  "title": "Show schedule id of a employee",
+                                  "url": "/store/1/employee/1/schedule/5",
+                                  "display_url": "/store/<store_id>/employee/<employee-id>/schedule/5",
+                                  "method": "GET",
+                                  "description": "Show schedule id of a employee",
+                                  "headers": {},
+                                  "body": null
+                              },
+                                {
+                                  "title": "Update A Schedule",
+                                  "url": "/store/1/employee/1/schedule/5",
+                                  "display_url": "/store/<store-id>/employee/<employee-id>/schedule/<schedule-id>",
+                                  "method": "PUT",
+                                  "description": "update schedule",
+                                  "headers": {
+                                    "Content-Type": "application/json"
+                                  },
+                                  "body": {
+                                    "available": true,
+                                    "session_start": 10,
+                                    "session_end": 20
+                                  }
+                                }
+                                ,
+                              {
+                                  "title": "Update Schedules",
+                                  "url": "/store/1/employee/1/schedule",
+                                  "display_url": "/store/<store-id>/employee/<employee-id>/schedule",
+                                  "method": "PUT",
+                                  "description": "You can Update a list of Schedule or 1 schedule, schedule's id must be included",
+
+                                  "headers": {
+                                      "Content-Type": "application/json"
+                                  },
+                                  "body": [
+                                      {
+                                          "available": true,
+                                          "employee_id": 1,
+                                          "session_start": 9,
+                                          "iso_weekday_id": 1,
+                                          "session_end": 17,
+                                          "weekday": "Monday",
+                                          "id": 1
+                                      },
+                                      {
+                                          "available": true,
+                                          "employee_id": 1,
+                                          "session_start": 9,
+                                          "iso_weekday_id": 2,
+                                          "session_end": 17,
+                                          "weekday": "Tuesday",
+                                          "id": 2
+                                      },
+                                      {
+                                          "available": true,
+                                          "employee_id": 1,
+                                          "session_start": 9,
+                                          "iso_weekday_id": 3,
+                                          "session_end": 17,
+                                          "weekday": "Wednesday",
+                                          "id": 3
+                                      },
+                                      {
+                                          "available": true,
+                                          "employee_id": 1,
+                                          "session_start": 9,
+                                          "iso_weekday_id": 4,
+                                          "session_end": 17,
+                                          "weekday": "Thursday",
+                                          "id": 4
+                                      },
+                                      {
+                                          "available": true,
+                                          "employee_id": 1,
+                                          "session_start": 9,
+                                          "iso_weekday_id": 5,
+                                          "session_end": 17,
+                                          "weekday": "Friday",
+                                          "id": 5
+                                      },
+                                      {
+                                          "available": true,
+                                          "employee_id": 1,
+                                          "session_start": 9,
+                                          "iso_weekday_id": 6,
+                                          "session_end": 17,
+                                          "weekday": "Saturday",
+                                          "id": 6
+                                      },
+                                      {
+                                          "available": true,
+                                          "employee_id": 1,
+                                          "session_start": 9,
+                                          "iso_weekday_id": 7,
+                                          "session_end": 17,
+                                          "weekday": "Sunday",
+                                          "id": 7
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
                 {
                   "endpoint_url": "/weekday",
                   "endpoint_description": "ISO WEEKDAY OVERVIEW",

@@ -73,7 +73,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:17:15 GMT
+Date: Fri, 17 Nov 2017 20:37:45 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -295,7 +295,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:17:16 GMT
+Date: Fri, 17 Nov 2017 20:37:45 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -377,7 +377,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:17:16 GMT
+Date: Fri, 17 Nov 2017 20:37:45 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -507,7 +507,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:17:17 GMT
+Date: Fri, 17 Nov 2017 20:37:46 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -592,7 +592,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:17:17 GMT
+Date: Fri, 17 Nov 2017 20:37:46 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -604,7 +604,7 @@ Vary: Origin
         "allow_backup": 2, 
         "break_time": 13, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:17:17.398921+00:00", 
+        "created": "2017-11-17T20:37:46.460842+00:00", 
         "email": "vuhoangnguyen@gmail.com", 
         "first_name": "Employee1", 
         "id": 20, 
@@ -686,7 +686,7 @@ Vary: Origin
         "session_in_minutes": 20, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T20:17:17.398921+00:00", 
+        "updated": "2017-11-17T20:37:46.460842+00:00", 
         "zipcode": 64118
     }, 
     {
@@ -694,7 +694,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:17:17.398921+00:00", 
+        "created": "2017-11-17T20:37:46.460842+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -776,7 +776,7 @@ Vary: Origin
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T20:17:17.398921+00:00", 
+        "updated": "2017-11-17T20:37:46.460842+00:00", 
         "zipcode": 64118
     }
 ]
@@ -827,7 +827,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:17:17 GMT
+Date: Fri, 17 Nov 2017 20:37:46 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -839,7 +839,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:17:17.398921+00:00", 
+        "created": "2017-11-17T20:37:46.460842+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -921,7 +921,7 @@ Vary: Origin
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T14:17:17.738211+00:00", 
+        "updated": "2017-11-17T14:37:46.692585+00:00", 
         "zipcode": 64118
     }
 ]
@@ -962,7 +962,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:17:17 GMT
+Date: Fri, 17 Nov 2017 20:37:46 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -974,7 +974,7 @@ Vary: Origin
         "allow_backup": 2, 
         "break_time": 13, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:17:17.398921+00:00", 
+        "created": "2017-11-17T20:37:46.460842+00:00", 
         "email": "vuhoangnguyen@gmail.com", 
         "first_name": "Employee1", 
         "id": 20, 
@@ -984,7 +984,7 @@ Vary: Origin
         "session_in_minutes": 20, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T20:17:17.398921+00:00", 
+        "updated": "2017-11-17T20:37:46.460842+00:00", 
         "zipcode": 64118
     }, 
     {
@@ -992,7 +992,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:17:17.398921+00:00", 
+        "created": "2017-11-17T20:37:46.460842+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -1002,7 +1002,7 @@ Vary: Origin
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T14:17:17.738211+00:00", 
+        "updated": "2017-11-17T14:37:46.692585+00:00", 
         "zipcode": 64118
     }
 ]
