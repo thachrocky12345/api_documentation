@@ -121,8 +121,8 @@
             "examples": [
                 {
                     "title": "List all store of a business including employees",
-                    "url": "/store",
-                    "display_url": "/store",
+                    "url": "/store/1/employee?limit=3&page=0",
+                    "display_url": "/store/<store-id>/employee",
                     "method": "GET",
                     "description": "List all store of a business including employees",
                     "query_parameters": {
