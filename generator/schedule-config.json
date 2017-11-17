@@ -1,6 +1,6 @@
 {
     "output_directories": "../schedule_service/",
-    "api_base_url": "http://159.203.64.35:6789/service",
+    "api_base_url": "http://localhost:1234/service",
     "username": "vunguyen",
     "password": "vunguyen12345!",
     "endpoints": [
@@ -109,6 +109,147 @@
 
                         "id": 3
                     }
+                }
+            ]
+        },
+        {
+            "endpoint_url": "/store/1/employee",
+            "endpoint_description": "EMPLOYEE OVERVIEW",
+            "endpoint_title": "Employee",
+            "endpoint_parameter": "Employee",
+            "display_url": "/store/<store-id>/employee",
+            "examples": [
+                {
+                    "title": "List all store of a business including employees",
+                    "url": "/store",
+                    "display_url": "/store",
+                    "method": "GET",
+                    "description": "List all store of a business including employees",
+                    "query_parameters": {
+                            "search": {
+                                "type": "string",
+                                "description": "Search for employee first_name, last_name, email, or address"
+                            },
+                            "limit": {
+                                "type": "number",
+                                "description": "You can set limit return"
+                            },
+                            "page": {
+                                "type": "number",
+                                "description": "page will go with limit, example limit=5&page=1"
+                            },
+                            "id": {
+                                "type": "int",
+                                "description": "Returns employee with specific id, you can provide more than one id, example: id=1&id=2>"
+                            }
+
+                    }
+                    ,
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Show an employee by id including schedule",
+                    "url": "/store/1/employee/1",
+                    "display_url": "/store/<store_id>/employee/<employee-id>",
+                    "method": "GET",
+                    "description": "Show an employee by id including schedule",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Insert Employee",
+                    "url": "/store/1/employee",
+                    "display_url": "/store/<store-id>/employee",
+                    "method": "POST",
+                    "description": "You can Insert a list of employees or 1 only",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                        {
+                                "city": "Gladstone",
+                                "first_name": "Employee1",
+                                "last_name": "Nguyen",
+                                "store_id": 1,
+                                "state": "MO",
+                                "zipcode": 64118,
+                                "email": "vuhoangnguyen@gmail.com",
+                                "allow_backup": 2,
+                                "break_time": 13,
+                                "phone": "816-803-1523",
+                                "rate": 5,
+                                "address": "8625 N Wabash Ave",
+                                "id": 20,
+                                "session_in_minutes": 20
+                            },
+                            {
+                                "city": "Gladstone",
+                                "first_name": "Employee2",
+                                "last_name": "Bui",
+                                "store_id": 1,
+                                "state": "MO",
+                                "zipcode": 64118,
+                                "email": "thachrocky@icloud.com",
+                                "allow_backup": 3,
+                                "phone": "816-803-1523",
+                                "break_time": 12,
+                                "id": 21,
+                                "rate": 5,
+                                "address": "7625 N Wabash Ave",
+                                "session_in_minutes": 30
+                            }
+                        ]
+                },
+                {
+                    "title": "Update Employee",
+                    "url": "/store/1/employee",
+                    "display_url": "/store/<store-id>/employee",
+                    "method": "PUT",
+                    "description": "You can Update a list of Employees or 1 Employee, Employee's id must be included",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                        {
+                                "city": "Gladstone",
+                                "first_name": "Employee2",
+                                "last_name": "Bui",
+                                "store_id": 1,
+                                "state": "MO",
+                                "zipcode": 64118,
+                                "email": "thachrocky@icloud.com",
+                                "allow_backup": 3,
+                                "phone": "816-803-1523",
+                                "break_time": 12,
+                                "id": 21,
+                                "rate": 5,
+                                "address": "7625 N Wabash Ave",
+                                "session_in_minutes": 30
+                        }
+                        ]
+                },
+                {
+                    "title": "DELETE Employee",
+                    "url": "/store/1/employee",
+                    "display_url": "/store/<store-id>/employee",
+                    "method": "DELETE",
+                    "description": "You can DELETE a list of Employees or 1  Employee, Employee's id must be included",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                        {
+                        "id": 20
+                        },
+                        {
+                        "id": 21
+                        }
+
+                    ]
                 }
             ]
         }

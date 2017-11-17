@@ -50,10 +50,10 @@ Parameter | Type | Description
 
 ### Example
 ```http
-GET http://159.203.64.35:6789/service/store
+GET http://localhost:1234/service/store
 Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
-Host: 159.203.64.35:6789
-Origin: http://159.203.64.35:6789/service
+Host: localhost:1234
+Origin: http://localhost:1234/service
 ```
 
 ```http
@@ -61,13 +61,13 @@ HTTP/1.1 200 Ok
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
-Access-Control-Allow-Origin: http://159.203.64.35:6789/service
+Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Tue, 14 Nov 2017 12:37:41 GMT
+Date: Fri, 17 Nov 2017 00:05:46 GMT
 Expires: 0
-Server: TwistedWeb/17.1.0
+Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
 Vary: Origin
 
@@ -75,27 +75,28 @@ Vary: Origin
     {
         "address": "7625 N Wabash Ave", 
         "city": "Gladstone", 
-        "created": "2017-10-19T22:02:51.192347+00:00", 
+        "created": "2017-11-16T23:51:34.984731+00:00", 
         "email": "thachrocky@icloud.com", 
         "employees": [], 
         "id": 2, 
         "name": "StoreA", 
         "phone": "816-803-1523", 
         "state": "MO", 
-        "updated": "2017-10-19T22:02:51.192347+00:00", 
+        "updated": "2017-11-16T23:51:34.984731+00:00", 
         "zipcode": 64118
     }, 
     {
         "address": "8525 N Wabash Ave", 
         "city": "Gladstone", 
-        "created": "2017-10-19T22:02:51.192347+00:00", 
+        "created": "2017-11-16T23:51:34.984731+00:00", 
         "email": "thachrocky12345@icloud.com", 
         "employees": [
             {
                 "address": "8625 N Wabash Ave", 
                 "allow_backup": 1, 
+                "break_time": 11, 
                 "city": "Gladstone", 
-                "created": "2017-10-19T22:02:57.373466+00:00", 
+                "created": "2017-11-16T23:51:56.311145+00:00", 
                 "email": "vuhoangnguyen@gmail.com", 
                 "first_name": "Employee1", 
                 "id": 1, 
@@ -105,14 +106,15 @@ Vary: Origin
                 "session_in_minutes": 20, 
                 "state": "MO", 
                 "store_id": 1, 
-                "updated": "2017-10-19T22:02:57.373466+00:00", 
+                "updated": "2017-11-16T23:51:56.311145+00:00", 
                 "zipcode": 64118
             }, 
             {
                 "address": "7625 N Wabash Ave", 
                 "allow_backup": 2, 
+                "break_time": 11, 
                 "city": "Gladstone", 
-                "created": "2017-10-19T22:02:57.373466+00:00", 
+                "created": "2017-11-16T23:51:56.311145+00:00", 
                 "email": "thachrocky@icloud.com", 
                 "first_name": "Employee2", 
                 "id": 2, 
@@ -122,14 +124,15 @@ Vary: Origin
                 "session_in_minutes": 30, 
                 "state": "MO", 
                 "store_id": 1, 
-                "updated": "2017-10-19T22:02:57.373466+00:00", 
+                "updated": "2017-11-16T23:51:56.311145+00:00", 
                 "zipcode": 64118
             }, 
             {
                 "address": "7625 N Wabash Ave", 
                 "allow_backup": 2, 
+                "break_time": 11, 
                 "city": "Gladstone", 
-                "created": "2017-10-19T22:02:57.373466+00:00", 
+                "created": "2017-11-16T23:51:56.311145+00:00", 
                 "email": "thachrocky@icloud.com", 
                 "first_name": "Employee3", 
                 "id": 3, 
@@ -139,14 +142,15 @@ Vary: Origin
                 "session_in_minutes": 30, 
                 "state": "MO", 
                 "store_id": 1, 
-                "updated": "2017-10-19T22:02:57.373466+00:00", 
+                "updated": "2017-11-16T23:51:56.311145+00:00", 
                 "zipcode": 64118
             }, 
             {
                 "address": "7625 N Wabash Ave", 
                 "allow_backup": 2, 
+                "break_time": 11, 
                 "city": "Gladstone", 
-                "created": "2017-10-19T22:02:57.373466+00:00", 
+                "created": "2017-11-16T23:51:56.311145+00:00", 
                 "email": "thachrocky@icloud.com", 
                 "first_name": "Employee4", 
                 "id": 4, 
@@ -156,14 +160,15 @@ Vary: Origin
                 "session_in_minutes": 30, 
                 "state": "MO", 
                 "store_id": 1, 
-                "updated": "2017-10-19T22:02:57.373466+00:00", 
+                "updated": "2017-11-16T23:51:56.311145+00:00", 
                 "zipcode": 64118
             }, 
             {
                 "address": "7625 N Wabash Ave", 
                 "allow_backup": 2, 
+                "break_time": 11, 
                 "city": "Gladstone", 
-                "created": "2017-10-19T22:02:57.373466+00:00", 
+                "created": "2017-11-16T23:51:56.311145+00:00", 
                 "email": "thachrocky@icloud.com", 
                 "first_name": "Employee5", 
                 "id": 5, 
@@ -173,7 +178,7 @@ Vary: Origin
                 "session_in_minutes": 30, 
                 "state": "MO", 
                 "store_id": 1, 
-                "updated": "2017-10-19T22:02:57.373466+00:00", 
+                "updated": "2017-11-16T23:51:56.311145+00:00", 
                 "zipcode": 64118
             }
         ], 
@@ -181,7 +186,7 @@ Vary: Origin
         "name": "StoreB", 
         "phone": "816-803-1523", 
         "state": "MO", 
-        "updated": "2017-10-19T22:02:51.192347+00:00", 
+        "updated": "2017-11-16T23:51:34.984731+00:00", 
         "zipcode": 64118
     }
 ]
@@ -196,10 +201,10 @@ Show a store by id including employees
 
 ### Example
 ```http
-GET http://159.203.64.35:6789/service/store/1
+GET http://localhost:1234/service/store/1
 Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
-Host: 159.203.64.35:6789
-Origin: http://159.203.64.35:6789/service
+Host: localhost:1234
+Origin: http://localhost:1234/service
 ```
 
 ```http
@@ -207,27 +212,28 @@ HTTP/1.1 200 Ok
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
-Access-Control-Allow-Origin: http://159.203.64.35:6789/service
+Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Tue, 14 Nov 2017 12:37:42 GMT
+Date: Fri, 17 Nov 2017 00:05:47 GMT
 Expires: 0
-Server: TwistedWeb/17.1.0
+Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
 Vary: Origin
 
 {
     "address": "8525 N Wabash Ave", 
     "city": "Gladstone", 
-    "created": "2017-10-19T22:02:51.192347+00:00", 
+    "created": "2017-11-16T23:51:34.984731+00:00", 
     "email": "thachrocky12345@icloud.com", 
     "employees": [
         {
             "address": "8625 N Wabash Ave", 
             "allow_backup": 1, 
+            "break_time": 11, 
             "city": "Gladstone", 
-            "created": "2017-10-19T22:02:57.373466+00:00", 
+            "created": "2017-11-16T23:51:56.311145+00:00", 
             "email": "vuhoangnguyen@gmail.com", 
             "first_name": "Employee1", 
             "id": 1, 
@@ -237,14 +243,15 @@ Vary: Origin
             "session_in_minutes": 20, 
             "state": "MO", 
             "store_id": 1, 
-            "updated": "2017-10-19T22:02:57.373466+00:00", 
+            "updated": "2017-11-16T23:51:56.311145+00:00", 
             "zipcode": 64118
         }, 
         {
             "address": "7625 N Wabash Ave", 
             "allow_backup": 2, 
+            "break_time": 11, 
             "city": "Gladstone", 
-            "created": "2017-10-19T22:02:57.373466+00:00", 
+            "created": "2017-11-16T23:51:56.311145+00:00", 
             "email": "thachrocky@icloud.com", 
             "first_name": "Employee2", 
             "id": 2, 
@@ -254,14 +261,15 @@ Vary: Origin
             "session_in_minutes": 30, 
             "state": "MO", 
             "store_id": 1, 
-            "updated": "2017-10-19T22:02:57.373466+00:00", 
+            "updated": "2017-11-16T23:51:56.311145+00:00", 
             "zipcode": 64118
         }, 
         {
             "address": "7625 N Wabash Ave", 
             "allow_backup": 2, 
+            "break_time": 11, 
             "city": "Gladstone", 
-            "created": "2017-10-19T22:02:57.373466+00:00", 
+            "created": "2017-11-16T23:51:56.311145+00:00", 
             "email": "thachrocky@icloud.com", 
             "first_name": "Employee3", 
             "id": 3, 
@@ -271,14 +279,15 @@ Vary: Origin
             "session_in_minutes": 30, 
             "state": "MO", 
             "store_id": 1, 
-            "updated": "2017-10-19T22:02:57.373466+00:00", 
+            "updated": "2017-11-16T23:51:56.311145+00:00", 
             "zipcode": 64118
         }, 
         {
             "address": "7625 N Wabash Ave", 
             "allow_backup": 2, 
+            "break_time": 11, 
             "city": "Gladstone", 
-            "created": "2017-10-19T22:02:57.373466+00:00", 
+            "created": "2017-11-16T23:51:56.311145+00:00", 
             "email": "thachrocky@icloud.com", 
             "first_name": "Employee4", 
             "id": 4, 
@@ -288,14 +297,15 @@ Vary: Origin
             "session_in_minutes": 30, 
             "state": "MO", 
             "store_id": 1, 
-            "updated": "2017-10-19T22:02:57.373466+00:00", 
+            "updated": "2017-11-16T23:51:56.311145+00:00", 
             "zipcode": 64118
         }, 
         {
             "address": "7625 N Wabash Ave", 
             "allow_backup": 2, 
+            "break_time": 11, 
             "city": "Gladstone", 
-            "created": "2017-10-19T22:02:57.373466+00:00", 
+            "created": "2017-11-16T23:51:56.311145+00:00", 
             "email": "thachrocky@icloud.com", 
             "first_name": "Employee5", 
             "id": 5, 
@@ -305,7 +315,7 @@ Vary: Origin
             "session_in_minutes": 30, 
             "state": "MO", 
             "store_id": 1, 
-            "updated": "2017-10-19T22:02:57.373466+00:00", 
+            "updated": "2017-11-16T23:51:56.311145+00:00", 
             "zipcode": 64118
         }
     ], 
@@ -313,7 +323,7 @@ Vary: Origin
     "name": "StoreB", 
     "phone": "816-803-1523", 
     "state": "MO", 
-    "updated": "2017-10-19T22:02:51.192347+00:00", 
+    "updated": "2017-11-16T23:51:34.984731+00:00", 
     "zipcode": 64118
 }
 ```
@@ -327,12 +337,12 @@ You can Insert a list of Stores or 1 store
 
 ### Example
 ```http
-POST http://159.203.64.35:6789/service/store
+POST http://localhost:1234/service/store
 Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
 Content-Length: 257
 Content-Type: application/json
-Host: 159.203.64.35:6789
-Origin: http://159.203.64.35:6789/service
+Host: localhost:1234
+Origin: http://localhost:1234/service
 
 [
     {
@@ -353,13 +363,13 @@ HTTP/1.1 200 Ok
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
-Access-Control-Allow-Origin: http://159.203.64.35:6789/service
+Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Tue, 14 Nov 2017 12:37:42 GMT
+Date: Fri, 17 Nov 2017 00:05:47 GMT
 Expires: 0
-Server: TwistedWeb/17.1.0
+Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
 Vary: Origin
 
@@ -367,13 +377,13 @@ Vary: Origin
     {
         "address": "7625 N Wabash Ave", 
         "city": "Gladstone", 
-        "created": "2017-11-14T12:37:42.202804+00:00", 
+        "created": "2017-11-17T00:05:47.285155+00:00", 
         "email": "thachrocky@icloud.com", 
         "id": 3, 
         "name": "StoreA", 
         "phone": "816-803-1523", 
         "state": "MO", 
-        "updated": "2017-11-14T12:37:42.202804+00:00", 
+        "updated": "2017-11-17T00:05:47.285155+00:00", 
         "zipcode": 64118
     }
 ]
@@ -388,12 +398,12 @@ You can Update a list of Stores or 1 store, store's id must included
 
 ### Example
 ```http
-PUT http://159.203.64.35:6789/service/store
+PUT http://localhost:1234/service/store
 Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
 Content-Length: 260
 Content-Type: application/json
-Host: 159.203.64.35:6789
-Origin: http://159.203.64.35:6789/service
+Host: localhost:1234
+Origin: http://localhost:1234/service
 
 [
     {
@@ -414,13 +424,13 @@ HTTP/1.1 200 Ok
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
-Access-Control-Allow-Origin: http://159.203.64.35:6789/service
+Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Tue, 14 Nov 2017 12:37:42 GMT
+Date: Fri, 17 Nov 2017 00:05:47 GMT
 Expires: 0
-Server: TwistedWeb/17.1.0
+Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
 Vary: Origin
 
@@ -428,13 +438,13 @@ Vary: Origin
     {
         "address": "7625 N Wabash Ave", 
         "city": "Gladstone", 
-        "created": "2017-11-14T12:37:42.202804+00:00", 
+        "created": "2017-11-17T00:05:47.285155+00:00", 
         "email": "thachrocky@icloud.com", 
         "id": 3, 
         "name": "StoreTest", 
         "phone": "816-803-1523", 
         "state": "MO", 
-        "updated": "2017-11-14T12:37:42.301256+00:00", 
+        "updated": "2017-11-16T18:05:47.359850+00:00", 
         "zipcode": 64118
     }
 ]
@@ -449,12 +459,12 @@ You can DELETE a list of Stores or 1 store, store's id must included
 
 ### Example
 ```http
-DELETE http://159.203.64.35:6789/service/store
+DELETE http://localhost:1234/service/store
 Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
 Content-Length: 15
 Content-Type: application/json
-Host: 159.203.64.35:6789
-Origin: http://159.203.64.35:6789/service
+Host: localhost:1234
+Origin: http://localhost:1234/service
 
 {
     "id": 3
@@ -466,26 +476,26 @@ HTTP/1.1 200 Ok
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
-Access-Control-Allow-Origin: http://159.203.64.35:6789/service
+Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Tue, 14 Nov 2017 12:37:42 GMT
+Date: Fri, 17 Nov 2017 00:05:47 GMT
 Expires: 0
-Server: TwistedWeb/17.1.0
+Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
 Vary: Origin
 
 {
     "address": "7625 N Wabash Ave", 
     "city": "Gladstone", 
-    "created": "2017-11-14T12:37:42.202804+00:00", 
+    "created": "2017-11-17T00:05:47.285155+00:00", 
     "email": "thachrocky@icloud.com", 
     "id": 3, 
     "name": "StoreTest", 
     "phone": "816-803-1523", 
     "state": "MO", 
-    "updated": "2017-11-14T12:37:42.301256+00:00", 
+    "updated": "2017-11-16T18:05:47.359850+00:00", 
     "zipcode": 64118
 }
 ```
