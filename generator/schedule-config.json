@@ -150,7 +150,7 @@
                 },
                 {
                     "title": "Check wait time",
-                    "url": "/store/1/employee/wait_time",
+                    "url": "/store/1/employee/wait_time?start=2017-11-18T09:30",
                     "display_url": "/store/<store_id>/employee/wait_time",
                     "method": "GET",
                     "description": "How much time a client need to wait for all employees if he/she want to get the service at current time",
@@ -174,7 +174,7 @@
                 },
                 {
                     "title": "Check wait time",
-                    "url": "/store/1/employee/1/wait_time",
+                    "url": "/store/1/employee/1/wait_time?start=2017-11-18T09:30",
                     "display_url": "/store/<store_id>/employee/<employee-id>/wait_time",
                     "method": "GET",
                     "description": "How much time a client need to wait for specific employee if he/she want to get the service at current time",
