@@ -149,11 +149,41 @@
                     "body": null
                 },
                 {
+                    "title": "Check wait time",
+                    "url": "/store/1/employee/wait_time",
+                    "display_url": "/store/<store_id>/employee/wait_time",
+                    "method": "GET",
+                    "description": "How much time a client need to wait for all employees if he/she want to get the service at current time",
+                  "query_parameters": {
+                            "start": {
+                                "type": "string",
+                                "description": "start is time a client expect to come in, example ?start=2017-11-20T15:30"
+                            }
+                  },
+                    "headers": {},
+                    "body": null
+                },
+                {
                     "title": "Show an employee by id including schedule",
                     "url": "/store/1/employee/1",
                     "display_url": "/store/<store_id>/employee/<employee-id>",
                     "method": "GET",
                     "description": "Show an employee by id including schedule",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Check wait time",
+                    "url": "/store/1/employee/1/wait_time",
+                    "display_url": "/store/<store_id>/employee/<employee-id>/wait_time",
+                    "method": "GET",
+                    "description": "How much time a client need to wait for specific employee if he/she want to get the service at current time",
+                  "query_parameters": {
+                            "start": {
+                                "type": "string",
+                                "description": "start is time a client expect to come in, example ?start=2017-11-20T15:30"
+                            }
+                  },
                     "headers": {},
                     "body": null
                 },

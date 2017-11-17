@@ -11,7 +11,9 @@ EMPLOYEE OVERVIEW
 Method | URL | Description
 --- | --- | ---
 **[GET](/documentation/endpoint/Employee#list-all-store-of-a-business-including-employees)** | `/store/<store-id>/employee` | List all store of a business including employees
+**[GET](/documentation/endpoint/Employee#check-wait-time)** | `/store/<store_id>/employee/wait_time` | Check wait time
 **[GET](/documentation/endpoint/Employee#show-an-employee-by-id-including-schedule)** | `/store/<store_id>/employee/<employee-id>` | Show an employee by id including schedule
+**[GET](/documentation/endpoint/Employee#check-wait-time)** | `/store/<store_id>/employee/<employee-id>/wait_time` | Check wait time
 **[POST](/documentation/endpoint/Employee#insert-employee)** | `/store/<store-id>/employee` | Insert Employee
 **[PUT](/documentation/endpoint/Employee#update-employee)** | `/store/<store-id>/employee` | Update Employee
 **[DELETE](/documentation/endpoint/Employee#delete-employee)** | `/store/<store-id>/employee` | DELETE Employee
@@ -71,7 +73,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 00:17:40 GMT
+Date: Fri, 17 Nov 2017 16:45:35 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -262,6 +264,51 @@ Vary: Origin
 ```
 
 
+Check wait time
+------
+<code request-method="GET">**GET** /store/&lt;store_id&gt;/employee/wait_time</code>
+
+How much time a client need to wait for all employees if he/she want to get the service at current time
+
+### Query Parameters
+
+Parameter | Type | Description
+--- | --- | ---
+`start` | string | start is time a client expect to come in, example ?start=2017-11-20T15:30
+
+
+
+### Example
+```http
+GET http://localhost:1234/service/store/1/employee/wait_time
+Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
+Host: localhost:1234
+Origin: http://localhost:1234/service
+```
+
+```http
+HTTP/1.1 500 Internal Server Error
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
+Access-Control-Allow-Origin: http://localhost:1234/service
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, must-revalidate
+Content-Type: application/json
+Date: Fri, 17 Nov 2017 16:45:35 GMT
+Expires: 0
+Server: TwistedWeb/16.6.0
+Transfer-Encoding: chunked
+Vary: Origin
+
+{
+    "attribute": null, 
+    "error_info": "list index out of range", 
+    "type_error": "UnknownError"
+}
+```
+
+
 Show an employee by id including schedule
 ------
 <code request-method="GET">**GET** /store/&lt;store_id&gt;/employee/&lt;employee-id&gt;</code>
@@ -285,7 +332,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 00:17:40 GMT
+Date: Fri, 17 Nov 2017 16:45:36 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -384,6 +431,47 @@ Vary: Origin
 ```
 
 
+Check wait time
+------
+<code request-method="GET">**GET** /store/&lt;store_id&gt;/employee/&lt;employee-id&gt;/wait_time</code>
+
+How much time a client need to wait for specific employee if he/she want to get the service at current time
+
+### Query Parameters
+
+Parameter | Type | Description
+--- | --- | ---
+`start` | string | start is time a client expect to come in, example ?start=2017-11-20T15:30
+
+
+
+### Example
+```http
+GET http://localhost:1234/service/store/1/employee/1/wait_time
+Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
+Host: localhost:1234
+Origin: http://localhost:1234/service
+```
+
+```http
+HTTP/1.1 200 Ok
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
+Access-Control-Allow-Origin: http://localhost:1234/service
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, must-revalidate
+Content-Type: application/json
+Date: Fri, 17 Nov 2017 16:45:36 GMT
+Expires: 0
+Server: TwistedWeb/16.6.0
+Transfer-Encoding: chunked
+Vary: Origin
+
+null
+```
+
+
 Insert Employee
 ------
 <code request-method="POST">**POST** /store/&lt;store-id&gt;/employee</code>
@@ -444,7 +532,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 00:17:41 GMT
+Date: Fri, 17 Nov 2017 16:45:36 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -456,7 +544,7 @@ Vary: Origin
         "allow_backup": 2, 
         "break_time": 13, 
         "city": "Gladstone", 
-        "created": "2017-11-17T00:17:41.338695+00:00", 
+        "created": "2017-11-17T16:45:37.055131+00:00", 
         "email": "vuhoangnguyen@gmail.com", 
         "first_name": "Employee1", 
         "id": 20, 
@@ -467,78 +555,78 @@ Vary: Origin
             {
                 "available": false, 
                 "employee_id": 20, 
-                "id": 50, 
+                "id": 64, 
                 "iso_weekday_id": 1, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.371095+00:00", 
+                "updated": "2017-11-17T16:45:37.087519+00:00", 
                 "weekday": "Monday"
             }, 
             {
                 "available": false, 
                 "employee_id": 20, 
-                "id": 51, 
+                "id": 65, 
                 "iso_weekday_id": 2, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.371095+00:00", 
+                "updated": "2017-11-17T16:45:37.087519+00:00", 
                 "weekday": "Tuesday"
             }, 
             {
                 "available": false, 
                 "employee_id": 20, 
-                "id": 52, 
+                "id": 66, 
                 "iso_weekday_id": 3, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.371095+00:00", 
+                "updated": "2017-11-17T16:45:37.087519+00:00", 
                 "weekday": "Wednesday"
             }, 
             {
                 "available": false, 
                 "employee_id": 20, 
-                "id": 53, 
+                "id": 67, 
                 "iso_weekday_id": 4, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.371095+00:00", 
+                "updated": "2017-11-17T16:45:37.087519+00:00", 
                 "weekday": "Thursday"
             }, 
             {
                 "available": false, 
                 "employee_id": 20, 
-                "id": 54, 
+                "id": 68, 
                 "iso_weekday_id": 5, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.371095+00:00", 
+                "updated": "2017-11-17T16:45:37.087519+00:00", 
                 "weekday": "Friday"
             }, 
             {
                 "available": false, 
                 "employee_id": 20, 
-                "id": 55, 
+                "id": 69, 
                 "iso_weekday_id": 6, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.371095+00:00", 
+                "updated": "2017-11-17T16:45:37.087519+00:00", 
                 "weekday": "Saturday"
             }, 
             {
                 "available": false, 
                 "employee_id": 20, 
-                "id": 56, 
+                "id": 70, 
                 "iso_weekday_id": 7, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.371095+00:00", 
+                "updated": "2017-11-17T16:45:37.087519+00:00", 
                 "weekday": "Sunday"
             }
         ], 
         "session_in_minutes": 20, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T00:17:41.338695+00:00", 
+        "updated": "2017-11-17T16:45:37.055131+00:00", 
         "zipcode": 64118
     }, 
     {
@@ -546,7 +634,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T00:17:41.338695+00:00", 
+        "created": "2017-11-17T16:45:37.055131+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -557,78 +645,78 @@ Vary: Origin
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 57, 
+                "id": 71, 
                 "iso_weekday_id": 1, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Monday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 58, 
+                "id": 72, 
                 "iso_weekday_id": 2, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Tuesday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 59, 
+                "id": 73, 
                 "iso_weekday_id": 3, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Wednesday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 60, 
+                "id": 74, 
                 "iso_weekday_id": 4, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Thursday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 61, 
+                "id": 75, 
                 "iso_weekday_id": 5, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Friday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 62, 
+                "id": 76, 
                 "iso_weekday_id": 6, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Saturday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 63, 
+                "id": 77, 
                 "iso_weekday_id": 7, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Sunday"
             }
         ], 
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T00:17:41.338695+00:00", 
+        "updated": "2017-11-17T16:45:37.055131+00:00", 
         "zipcode": 64118
     }
 ]
@@ -679,7 +767,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 00:17:41 GMT
+Date: Fri, 17 Nov 2017 16:45:37 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -691,7 +779,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T00:17:41.338695+00:00", 
+        "created": "2017-11-17T16:45:37.055131+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -702,78 +790,78 @@ Vary: Origin
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 57, 
+                "id": 71, 
                 "iso_weekday_id": 1, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Monday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 58, 
+                "id": 72, 
                 "iso_weekday_id": 2, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Tuesday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 59, 
+                "id": 73, 
                 "iso_weekday_id": 3, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Wednesday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 60, 
+                "id": 74, 
                 "iso_weekday_id": 4, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Thursday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 61, 
+                "id": 75, 
                 "iso_weekday_id": 5, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Friday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 62, 
+                "id": 76, 
                 "iso_weekday_id": 6, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Saturday"
             }, 
             {
                 "available": false, 
                 "employee_id": 21, 
-                "id": 63, 
+                "id": 77, 
                 "iso_weekday_id": 7, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T00:17:41.372544+00:00", 
+                "updated": "2017-11-17T16:45:37.089078+00:00", 
                 "weekday": "Sunday"
             }
         ], 
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-16T18:17:41.771753+00:00", 
+        "updated": "2017-11-17T10:45:37.438878+00:00", 
         "zipcode": 64118
     }
 ]
@@ -814,7 +902,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 00:17:41 GMT
+Date: Fri, 17 Nov 2017 16:45:37 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -826,7 +914,7 @@ Vary: Origin
         "allow_backup": 2, 
         "break_time": 13, 
         "city": "Gladstone", 
-        "created": "2017-11-17T00:17:41.338695+00:00", 
+        "created": "2017-11-17T16:45:37.055131+00:00", 
         "email": "vuhoangnguyen@gmail.com", 
         "first_name": "Employee1", 
         "id": 20, 
@@ -836,7 +924,7 @@ Vary: Origin
         "session_in_minutes": 20, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T00:17:41.338695+00:00", 
+        "updated": "2017-11-17T16:45:37.055131+00:00", 
         "zipcode": 64118
     }, 
     {
@@ -844,7 +932,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T00:17:41.338695+00:00", 
+        "created": "2017-11-17T16:45:37.055131+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -854,7 +942,7 @@ Vary: Origin
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-16T18:17:41.771753+00:00", 
+        "updated": "2017-11-17T10:45:37.438878+00:00", 
         "zipcode": 64118
     }
 ]
