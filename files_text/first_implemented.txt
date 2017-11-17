@@ -5,3 +5,4 @@
 5. campaign_keyword {String} - default empty
 6. campaign_content {String} - default empty
 7. campaign_id {String} - default empty
+8. location {String} - default empty - the full uri of the document (without the hash part)
