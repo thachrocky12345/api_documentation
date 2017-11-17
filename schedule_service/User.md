@@ -1,5 +1,5 @@
 
-User
+Users
 ======
 
 `/user`
@@ -75,7 +75,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:58:08 GMT
+Date: Fri, 17 Nov 2017 20:17:14 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -153,7 +153,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:58:09 GMT
+Date: Fri, 17 Nov 2017 20:17:14 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -250,7 +250,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:58:09 GMT
+Date: Fri, 17 Nov 2017 20:17:14 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -258,26 +258,26 @@ Vary: Origin
 
 [
     {
-        "address": null, 
-        "can_email": null, 
-        "can_text": null, 
-        "city": null, 
-        "created": null, 
-        "email": null, 
-        "first_name": null, 
-        "id": null, 
+        "address": "8625 N Wabash Ave", 
+        "can_email": false, 
+        "can_text": true, 
+        "city": "Gladstone", 
+        "created": "2017-11-17T20:17:14.875960+00:00", 
+        "email": "vuhoangnguyen@gmail.com", 
+        "first_name": "VuOwner", 
+        "id": 11, 
         "language": null, 
-        "last_login": null, 
-        "last_name": null, 
-        "password": null, 
-        "phone": null, 
-        "role": null, 
+        "last_login": "2017-11-17T20:17:14.875960+00:00", 
+        "last_name": "Nguyen", 
+        "password": "448ed7416fce2cb66c285d182b1ba3df1e90016d", 
+        "phone": "816-803-1523", 
+        "role": "OWNER", 
         "social_network": null, 
-        "state": null, 
+        "state": "MO", 
         "token": null, 
-        "updated": null, 
-        "username": null, 
-        "zipcode": null
+        "updated": "2017-11-17T20:17:14.875960+00:00", 
+        "username": "nguyen10", 
+        "zipcode": 64118
     }, 
     {
         "address": null, 
@@ -352,7 +352,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:58:09 GMT
+Date: Fri, 17 Nov 2017 20:17:14 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -419,7 +419,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:58:09 GMT
+Date: Fri, 17 Nov 2017 20:17:14 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -427,26 +427,26 @@ Vary: Origin
 
 [
     {
-        "address": null, 
-        "can_email": null, 
-        "can_text": null, 
-        "city": null, 
-        "created": null, 
-        "email": null, 
-        "first_name": null, 
-        "id": null, 
+        "address": "8625 N Wabash Ave", 
+        "can_email": false, 
+        "can_text": true, 
+        "city": "Gladstone", 
+        "created": "2017-11-17T20:17:14.875960+00:00", 
+        "email": "vuhoangnguyen@gmail.com", 
+        "first_name": "VuOwner", 
+        "id": 11, 
         "language": null, 
-        "last_login": null, 
-        "last_name": null, 
-        "password": null, 
-        "phone": null, 
-        "role": null, 
+        "last_login": "2017-11-17T20:17:14.875960+00:00", 
+        "last_name": "Nguyen", 
+        "password": "448ed7416fce2cb66c285d182b1ba3df1e90016d", 
+        "phone": "816-803-1523", 
+        "role": "OWNER", 
         "social_network": null, 
-        "state": null, 
+        "state": "MO", 
         "token": null, 
-        "updated": null, 
-        "username": null, 
-        "zipcode": null
+        "updated": "2017-11-17T20:17:14.875960+00:00", 
+        "username": "nguyen10", 
+        "zipcode": 64118
     }, 
     {
         "address": null, 

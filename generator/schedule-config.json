@@ -4,13 +4,41 @@
     "username": "vunguyen",
     "password": "vunguyen12345!",
     "endpoints": [
-      {
-            "endpoint_url": "/user",
-            "endpoint_description": "USER OVERVIEW",
-            "endpoint_title": "User",
-            "endpoint_parameter": "User",
-            "display_url": "/user",
-            "examples": [
+                {
+                  "endpoint_url": "/weekday",
+                  "endpoint_description": "ISO WEEKDAY OVERVIEW",
+                  "endpoint_title": "weekday",
+                  "endpoint_parameter": "ISO_WEEKDAY",
+                  "display_url": "/weekday",
+                  "examples": [
+                    {
+                      "title": "List all standard weekdays",
+                      "url": "/weekday",
+                      "display_url": "/weekday",
+                      "method": "GET",
+                      "description": "List all weekdays",
+                      "headers": {},
+                      "body": null
+                    },
+                    {
+                      "title": "check a weekday",
+                      "url": "/weekday/1",
+                      "display_url": "/weekday/<weekday_id>",
+                      "method": "GET",
+                      "description": "Show what day of a weekday number",
+                      "headers": {},
+                      "body": null
+                    }
+                  ]
+                }
+              ,
+             {
+                  "endpoint_url": "/user",
+                  "endpoint_description": "USER OVERVIEW",
+                  "endpoint_title": "Users",
+                  "endpoint_parameter": "User",
+                  "display_url": "/user",
+                  "examples": [
                 {
                     "title": "List all user or clients of the business",
                     "url": "/user?id=1&id=2",
