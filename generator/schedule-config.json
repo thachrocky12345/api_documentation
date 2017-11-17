@@ -5,6 +5,153 @@
     "password": "vunguyen12345!",
     "endpoints": [
       {
+            "endpoint_url": "/user",
+            "endpoint_description": "USER OVERVIEW",
+            "endpoint_title": "User",
+            "endpoint_parameter": "User",
+            "display_url": "/user",
+            "examples": [
+                {
+                    "title": "List all user or clients of the business",
+                    "url": "/user",
+                    "display_url": "/user",
+                    "method": "GET",
+                    "description": "List all user or clients of the business",
+                    "query_parameters": {
+                            "search": {
+                                "type": "string",
+                                "description": "Search for employee first_name, last_name, email, or username"
+                            },
+                            "limit": {
+                                "type": "number",
+                                "description": "You can set limit return"
+                            },
+                            "page": {
+                                "type": "number",
+                                "description": "page will go with limit, example limit=5&page=1"
+                            },
+                            "id": {
+                                "type": "int",
+                                "description": "Returns user with specific id, you can provide more than one id, example: id=1&id=2>"
+                            }
+
+                    }
+                    ,
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Show a user",
+                    "url": "/user/1",
+                    "display_url": "/user/<user_id>",
+                    "method": "GET",
+                    "description": "Show a user by id ",
+                    "headers": {},
+                    "body": null
+                },
+                {
+                    "title": "Insert User",
+                    "url": "/user",
+                    "display_url": "/user",
+                    "method": "POST",
+                    "description": "You can Insert a list of Users or 1 user",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                        {
+                              "username": "nguyen10",
+                              "city": "Gladstone",
+                              "first_name": "VuOwner",
+                              "last_name": "Nguyen",
+                              "language": null,
+                              "can_text": true,
+                              "zipcode": 64118,
+                              "can_email": false,
+                              "email": "vuhoangnguyen@gmail.com",
+                              "social_network": null,
+                              "phone": "816-803-1523",
+                              "state": "MO",
+                              "role": "OWNER",
+                              "token": null,
+                              "address": "8625 N Wabash Ave",
+                              "password": "test12345",
+                              "id": 11
+                          },
+                          {
+                              "username": "nguyen9",
+                              "city": "Gladstone",
+                              "first_name": "Customer9",
+                              "last_name": "Nguyen",
+                              "language": null,
+                              "can_text": true,
+                              "zipcode": 64118,
+                              "can_email": false,
+                              "email": "thach.bui@gmail.com",
+                              "social_network": null,
+                              "phone": "816-803-1523",
+                              "state": "MO",
+                              "role": "CUSTOMER",
+                              "token": null,
+                              "address": "8625 N Wabash Ave",
+                              "password": "test12345",
+                              "id": 12
+                          }
+                        ]
+                },
+                {
+                    "title": "Update User",
+                    "url": "/user",
+                    "display_url": "/user",
+                    "method": "PUT",
+                    "description": "You can Update a list of Users or 1 user, user's id must be included",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [
+                        {
+                              "username": "nguyen9",
+                              "city": "Gladstone",
+                              "first_name": "Customer9",
+                              "last_name": "Nguyen",
+                              "language": null,
+                              "can_text": true,
+                              "zipcode": 64118,
+                              "can_email": false,
+                              "email": "thach.bui@gmail.com",
+                              "social_network": null,
+                              "phone": "816-803-1523",
+                              "state": "MO",
+                              "role": "CUSTOMER",
+                              "token": null,
+                              "address": "8625 N Wabash Ave",
+                              "password": "test12345",
+                              "id": 12
+                          }
+                        ]
+                },
+                {
+                    "title": "DELETE users",
+                    "url": "/user",
+                    "display_url": "/user",
+                    "method": "DELETE",
+                    "description": "You can DELETE a list of Users or 1 user, user's id must included",
+
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": [{
+                        "id": 11
+                    },
+                    {
+                        "id": 12
+                    }]
+                }
+            ]
+        },
+      {
             "endpoint_url": "/store",
             "endpoint_description": "STORE OVERVIEW",
             "endpoint_title": "Store",

@@ -52,6 +52,7 @@ Attribute | Type | Readonly | Nullable | Has Default
 `event_version` | text | &nbsp; | &bullet; | &nbsp;
 `id` | integer | &bullet; | &nbsp; | &bullet;
 `ip` | text | &nbsp; | &bullet; | &nbsp;
+`location` | text | &nbsp; | &bullet; | &nbsp;
 `next_nilead_id` | text | &nbsp; | &bullet; | &nbsp;
 `nilead_id` | text | &nbsp; | &nbsp; | &nbsp;
 `non_interaction` | boolean | &nbsp; | &nbsp; | &bullet;
@@ -97,7 +98,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Thu, 16 Nov 2017 02:28:58 GMT
+Date: Fri, 17 Nov 2017 19:38:20 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -115,27 +116,38 @@ Vary: Origin
         "campaign_name": null, 
         "campaign_source": null, 
         "client_engine": "WebKit", 
-        "client_locale": "nb_NO", 
-        "client_name": "Safari", 
+        "client_locale": "en_US", 
+        "client_name": "Mobile Safari", 
         "client_type": "browser", 
-        "client_version": "10.0", 
-        "created": "2017-11-16T02:24:19.629780+00:00", 
-        "device_make": "", 
-        "device_model": "", 
-        "device_platform_name": "Mac - 10.12 - ", 
-        "event_action": "https://nilead.com/", 
+        "client_version": "11.0", 
+        "created": "2017-11-17T18:18:54.321563+00:00", 
+        "device_make": "AP", 
+        "device_model": "iPhone", 
+        "device_platform_name": "iOS - 11.0 - ", 
+        "event_action": "", 
         "event_category": "pageview", 
         "event_context": {
             "@context": "http://schema.org", 
-            "@id": "https://nilead.com/portfolio/oneonesix", 
-            "@type": "WebPage", 
-            "description": "{{ global.resource.seoDescription }}", 
-            "keywords": "{{ global.resource.seoKeywords }}", 
+            "@id": "https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city", 
+            "@type": "Article", 
+            "author": {
+                "@type": "Person", 
+                "name": "Ivan Lamothe"
+            }, 
+            "dateModified": "2017-05-29T17:16:05+07:00", 
+            "datePublished": "2017-05-28T14:59:47+07:00", 
+            "description": "My name is Ivan Lamothe, I am working in Ho Chi Minh City (the Southern capital of Vietnam) as the Creative Director of Nilead, a Digital Agency. I find my 2 years working here a wild ride with many ups and downs and many interesting experiences that I would love to share with my fellow designers who are working or planning to come here to work.", 
+            "headline": "Living as an expat in Ho Chi Minh City", 
+            "image": [
+                "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-banner_1495975397_grande.jpg", 
+                "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-listing_1495975401_grande.jpg"
+            ], 
+            "keywords": "Expat, Ho Chi Minh City, Vietnam, Saigon, food, business,  web design, culture, tips, living", 
             "mainEntityOfPage": {
-                "@id": "https://nilead.com/portfolio/oneonesix", 
+                "@id": "https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city", 
                 "@type": "WebPage"
             }, 
-            "name": "{{ global.resource.seoTitle }}", 
+            "name": "Living as an expat in Ho Chi Minh City", 
             "publisher": {
                 "@type": "Organization", 
                 "logo": {
@@ -145,21 +157,22 @@ Vary: Origin
                 "name": "Nilead"
             }
         }, 
-        "event_label": "/portfolio/oneonesix", 
+        "event_label": "/article/living-as-an-expat-in-ho-chi-minh-city", 
         "event_object_id": null, 
         "event_object_source": null, 
         "event_subject_id": null, 
         "event_subject_source": null, 
-        "event_timestamp": 1510799059, 
+        "event_timestamp": 1510942734, 
         "event_value": 0, 
         "event_version": "1.0", 
-        "id": 6, 
-        "ip": "84.212.116.233", 
+        "id": 127, 
+        "ip": "1.47.1.28", 
+        "location": null, 
         "next_nilead_id": null, 
-        "nilead_id": "9d3dddb5-064f-4604-85fc-3b533ffa2257", 
+        "nilead_id": "e79b6917-0f69-4174-a0f8-9b6a93e16f0d", 
         "non_interaction": false, 
         "prev_nilead_id": null, 
-        "session_id": "046730g4ddoim7q711lpe29fcl", 
+        "session_id": "nkp314p16fudcdo5u64n5rjpag", 
         "user_id": 1
     }, 
     {
@@ -172,73 +185,15 @@ Vary: Origin
         "campaign_medium": null, 
         "campaign_name": null, 
         "campaign_source": null, 
-        "client_engine": "WebKit", 
-        "client_locale": "nb_NO", 
-        "client_name": "Safari", 
+        "client_engine": "Blink", 
+        "client_locale": "en_US", 
+        "client_name": "Chrome", 
         "client_type": "browser", 
-        "client_version": "10.0", 
-        "created": "2017-11-16T02:24:12.970208+00:00", 
+        "client_version": "60.0", 
+        "created": "2017-11-17T18:17:13.421728+00:00", 
         "device_make": "", 
         "device_model": "", 
-        "device_platform_name": "Mac - 10.12 - ", 
-        "event_action": "https://www.sortfolio.com/listings/23135-nilead", 
-        "event_category": "pageview", 
-        "event_context": {
-            "@context": "http://schema.org", 
-            "@id": "https://nilead.com/", 
-            "@type": "WebPage", 
-            "description": "Nilead provides custom design, mobile-friendly for your business&#039;s website by focusing on your brand. Start growing your branding with via your website with Nilead today!", 
-            "keywords": "web design, web designer, custom website design, custom website development, ecommerce website design services, ecommerce website services, ecommerce website design company, ecommerce web design company", 
-            "mainEntityOfPage": {
-                "@id": "https://nilead.com/", 
-                "@type": "WebPage"
-            }, 
-            "name": "Web services, brand building, Ecommerce &amp; SEO | Nilead  company", 
-            "publisher": {
-                "@type": "Organization", 
-                "logo": {
-                    "@type": "ImageObject", 
-                    "url": "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png"
-                }, 
-                "name": "Nilead"
-            }
-        }, 
-        "event_label": "/", 
-        "event_object_id": null, 
-        "event_object_source": null, 
-        "event_subject_id": null, 
-        "event_subject_source": null, 
-        "event_timestamp": 1510799052, 
-        "event_value": 0, 
-        "event_version": "1.0", 
-        "id": 5, 
-        "ip": "84.212.116.233", 
-        "next_nilead_id": null, 
-        "nilead_id": "9d3dddb5-064f-4604-85fc-3b533ffa2257", 
-        "non_interaction": false, 
-        "prev_nilead_id": null, 
-        "session_id": "046730g4ddoim7q711lpe29fcl", 
-        "user_id": 1
-    }, 
-    {
-        "app_id": null, 
-        "app_name": null, 
-        "app_version": null, 
-        "campaign_content": null, 
-        "campaign_id": null, 
-        "campaign_keyword": null, 
-        "campaign_medium": null, 
-        "campaign_name": null, 
-        "campaign_source": null, 
-        "client_engine": "WebKit", 
-        "client_locale": "nb_NO", 
-        "client_name": "Safari", 
-        "client_type": "browser", 
-        "client_version": "10.0", 
-        "created": "2017-11-16T02:19:09.127030+00:00", 
-        "device_make": "", 
-        "device_model": "", 
-        "device_platform_name": "Mac - 10.12 - ", 
+        "device_platform_name": "Windows - 10 - x64", 
         "event_action": "generic-exit", 
         "event_category": "lead", 
         "event_context": null, 
@@ -247,16 +202,87 @@ Vary: Origin
         "event_object_source": null, 
         "event_subject_id": null, 
         "event_subject_source": null, 
-        "event_timestamp": 1510798748, 
+        "event_timestamp": 1510942633, 
         "event_value": 0, 
         "event_version": "1.0", 
-        "id": 4, 
-        "ip": "84.212.116.233", 
+        "id": 126, 
+        "ip": "103.76.180.104", 
+        "location": null, 
         "next_nilead_id": null, 
-        "nilead_id": "9d3dddb5-064f-4604-85fc-3b533ffa2257", 
+        "nilead_id": "e5316257-23a5-4bf7-a3b8-8d05fd20ae49", 
         "non_interaction": false, 
         "prev_nilead_id": null, 
-        "session_id": "046730g4ddoim7q711lpe29fcl", 
+        "session_id": "cbk243vg6gm9sk3v4jtkh201td", 
+        "user_id": 1
+    }, 
+    {
+        "app_id": null, 
+        "app_name": null, 
+        "app_version": null, 
+        "campaign_content": null, 
+        "campaign_id": null, 
+        "campaign_keyword": null, 
+        "campaign_medium": null, 
+        "campaign_name": null, 
+        "campaign_source": null, 
+        "client_engine": "Blink", 
+        "client_locale": "en_US", 
+        "client_name": "Chrome", 
+        "client_type": "browser", 
+        "client_version": "60.0", 
+        "created": "2017-11-17T18:13:00.161212+00:00", 
+        "device_make": "", 
+        "device_model": "", 
+        "device_platform_name": "Windows - 10 - x64", 
+        "event_action": "", 
+        "event_category": "pageview", 
+        "event_context": {
+            "@context": "http://schema.org", 
+            "@id": "https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city", 
+            "@type": "Article", 
+            "author": {
+                "@type": "Person", 
+                "name": "Ivan Lamothe"
+            }, 
+            "dateModified": "2017-05-29T17:16:05+07:00", 
+            "datePublished": "2017-05-28T14:59:47+07:00", 
+            "description": "My name is Ivan Lamothe, I am working in Ho Chi Minh City (the Southern capital of Vietnam) as the Creative Director of Nilead, a Digital Agency. I find my 2 years working here a wild ride with many ups and downs and many interesting experiences that I would love to share with my fellow designers who are working or planning to come here to work.", 
+            "headline": "Living as an expat in Ho Chi Minh City", 
+            "image": [
+                "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-banner_1495975397_grande.jpg", 
+                "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-listing_1495975401_grande.jpg"
+            ], 
+            "keywords": "Expat, Ho Chi Minh City, Vietnam, Saigon, food, business,  web design, culture, tips, living", 
+            "mainEntityOfPage": {
+                "@id": "https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city", 
+                "@type": "WebPage"
+            }, 
+            "name": "Living as an expat in Ho Chi Minh City", 
+            "publisher": {
+                "@type": "Organization", 
+                "logo": {
+                    "@type": "ImageObject", 
+                    "url": "https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png"
+                }, 
+                "name": "Nilead"
+            }
+        }, 
+        "event_label": "/article/living-as-an-expat-in-ho-chi-minh-city", 
+        "event_object_id": null, 
+        "event_object_source": null, 
+        "event_subject_id": null, 
+        "event_subject_source": null, 
+        "event_timestamp": 1510942379, 
+        "event_value": 0, 
+        "event_version": "1.0", 
+        "id": 125, 
+        "ip": "103.76.180.104", 
+        "location": null, 
+        "next_nilead_id": null, 
+        "nilead_id": "e5316257-23a5-4bf7-a3b8-8d05fd20ae49", 
+        "non_interaction": false, 
+        "prev_nilead_id": null, 
+        "session_id": "cbk243vg6gm9sk3v4jtkh201td", 
         "user_id": 1
     }
 ]
@@ -382,7 +408,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Thu, 16 Nov 2017 02:28:58 GMT
+Date: Fri, 17 Nov 2017 19:38:20 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -448,8 +474,9 @@ Vary: Origin
         "event_timestamp": 1510485355, 
         "event_value": 0, 
         "event_version": "1.0", 
-        "id": 7, 
+        "id": 129, 
         "ip": "115.77.188.31", 
+        "location": null, 
         "next_nilead_id": null, 
         "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c", 
         "non_interaction": null, 
@@ -487,8 +514,9 @@ Vary: Origin
         "event_timestamp": 1510484635, 
         "event_value": 0, 
         "event_version": "1.0", 
-        "id": 8, 
+        "id": 130, 
         "ip": "115.77.188.31", 
+        "location": null, 
         "next_nilead_id": null, 
         "nilead_id": "84f6e6ee-d899-480e-92f1-4c86586be62c", 
         "non_interaction": null, 
@@ -523,7 +551,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Thu, 16 Nov 2017 02:28:58 GMT
+Date: Fri, 17 Nov 2017 19:38:20 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -562,6 +590,7 @@ Vary: Origin
         "event_version": "1.0", 
         "id": 1718, 
         "ip": "151.246.52.73", 
+        "location": null, 
         "next_nilead_id": null, 
         "nilead_id": "1b55e65d-f438-4e5a-a148-bbded08ddd1d", 
         "non_interaction": false, 
@@ -601,6 +630,7 @@ Vary: Origin
         "event_version": "1.0", 
         "id": 1780, 
         "ip": "151.246.52.73", 
+        "location": null, 
         "next_nilead_id": null, 
         "nilead_id": "1b55e65d-f438-4ea-a148-bbded08ddd1d", 
         "non_interaction": false, 
@@ -635,7 +665,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Thu, 16 Nov 2017 02:28:58 GMT
+Date: Fri, 17 Nov 2017 19:38:21 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -674,6 +704,7 @@ Vary: Origin
         "event_version": "1.0", 
         "id": 1780, 
         "ip": "151.246.52.73", 
+        "location": null, 
         "next_nilead_id": null, 
         "nilead_id": "1b55e65d-f438-4ea-a148-bbded08ddd1d", 
         "non_interaction": false, 
@@ -713,6 +744,7 @@ Vary: Origin
         "event_version": "1.0", 
         "id": 1718, 
         "ip": "151.246.52.73", 
+        "location": null, 
         "next_nilead_id": null, 
         "nilead_id": "1b55e65d-f438-4e5a-a148-bbded08ddd1d", 
         "non_interaction": false, 
@@ -747,7 +779,7 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Thu, 16 Nov 2017 02:28:58 GMT
+Date: Fri, 17 Nov 2017 19:38:21 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -791,11 +823,11 @@ Vary: Origin
         "event_category": "failedLead"
     }, 
     {
-        "count": 421, 
+        "count": 452, 
         "event_category": "lead"
     }, 
     {
-        "count": 1520, 
+        "count": 1600, 
         "event_category": "pageview"
     }, 
     {
@@ -829,16 +861,16 @@ Access-Control-Allow-Origin: http://159.203.64.35:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: text/csv
-Date: Thu, 16 Nov 2017 02:28:59 GMT
+Date: Fri, 17 Nov 2017 19:38:21 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
 Vary: Origin
 
-"app_id","app_name","app_version","campaign_content","campaign_id","campaign_keyword","campaign_medium","campaign_name","campaign_source","client_engine","client_locale","client_name","client_type","client_version","created","device_make","device_model","device_platform_name","event_action","event_category","event_context","event_label","event_object_id","event_object_source","event_subject_id","event_subject_source","event_timestamp","event_value","event_version","id","ip","next_nilead_id","nilead_id","non_interaction","prev_nilead_id","session_id","user_id"
-"","","","","","","","","","WebKit","nb_NO","Safari","browser","10.0","2017-11-16 02:24:19.629780+00:00","","","Mac - 10.12 - ","https://nilead.com/","pageview","{u'publisher': {u'logo': {u'url': u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png', u'@type': u'ImageObject'}, u'@type': u'Organization', u'name': u'Nilead'}, u'description': u'{{ global.resource.seoDescription }}', u'mainEntityOfPage': {u'@id': u'https://nilead.com/portfolio/oneonesix', u'@type': u'WebPage'}, u'keywords': u'{{ global.resource.seoKeywords }}', u'@context': u'http://schema.org', u'@id': u'https://nilead.com/portfolio/oneonesix', u'@type': u'WebPage', u'name': u'{{ global.resource.seoTitle }}'}","/portfolio/oneonesix","","","","",1510799059,0,"1.0",6,"84.212.116.233","","9d3dddb5-064f-4604-85fc-3b533ffa2257",False,"","046730g4ddoim7q711lpe29fcl",1
-"","","","","","","","","","WebKit","nb_NO","Safari","browser","10.0","2017-11-16 02:24:12.970208+00:00","","","Mac - 10.12 - ","https://www.sortfolio.com/listings/23135-nilead","pageview","{u'publisher': {u'logo': {u'url': u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png', u'@type': u'ImageObject'}, u'@type': u'Organization', u'name': u'Nilead'}, u'description': u'Nilead provides custom design, mobile-friendly for your business&#039;s website by focusing on your brand. Start growing your branding with via your website with Nilead today!', u'mainEntityOfPage': {u'@id': u'https://nilead.com/', u'@type': u'WebPage'}, u'keywords': u'web design, web designer, custom website design, custom website development, ecommerce website design services, ecommerce website services, ecommerce website design company, ecommerce web design company', u'@context': u'http://schema.org', u'@id': u'https://nilead.com/', u'@type': u'WebPage', u'name': u'Web services, brand building, Ecommerce &amp; SEO | Nilead  company'}","/","","","","",1510799052,0,"1.0",5,"84.212.116.233","","9d3dddb5-064f-4604-85fc-3b533ffa2257",False,"","046730g4ddoim7q711lpe29fcl",1
-"","","","","","","","","","WebKit","nb_NO","Safari","browser","10.0","2017-11-16 02:19:09.127030+00:00","","","Mac - 10.12 - ","generic-exit","lead","","exitIntentTrigger","","","","",1510798748,0,"1.0",4,"84.212.116.233","","9d3dddb5-064f-4604-85fc-3b533ffa2257",False,"","046730g4ddoim7q711lpe29fcl",1
+"app_id","app_name","app_version","campaign_content","campaign_id","campaign_keyword","campaign_medium","campaign_name","campaign_source","client_engine","client_locale","client_name","client_type","client_version","created","device_make","device_model","device_platform_name","event_action","event_category","event_context","event_label","event_object_id","event_object_source","event_subject_id","event_subject_source","event_timestamp","event_value","event_version","id","ip","location","next_nilead_id","nilead_id","non_interaction","prev_nilead_id","session_id","user_id"
+"","","","","","","","","","WebKit","en_US","Mobile Safari","browser","11.0","2017-11-17 18:18:54.321563+00:00","AP","iPhone","iOS - 11.0 - ","","pageview","{u'publisher': {u'logo': {u'url': u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png', u'@type': u'ImageObject'}, u'@type': u'Organization', u'name': u'Nilead'}, u'name': u'Living as an expat in Ho Chi Minh City', u'author': {u'@type': u'Person', u'name': u'Ivan Lamothe'}, u'headline': u'Living as an expat in Ho Chi Minh City', u'image': [u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-banner_1495975397_grande.jpg', u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-listing_1495975401_grande.jpg'], u'datePublished': u'2017-05-28T14:59:47+07:00', u'mainEntityOfPage': {u'@id': u'https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city', u'@type': u'WebPage'}, u'@type': u'Article', u'keywords': u'Expat, Ho Chi Minh City, Vietnam, Saigon, food, business,  web design, culture, tips, living', u'@context': u'http://schema.org', u'@id': u'https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city', u'dateModified': u'2017-05-29T17:16:05+07:00', u'description': u'My name is Ivan Lamothe, I am working in Ho Chi Minh City (the Southern capital of Vietnam) as the Creative Director of Nilead, a Digital Agency. I find my 2 years working here a wild ride with many ups and downs and many interesting experiences that I would love to share with my fellow designers who are working or planning to come here to work.'}","/article/living-as-an-expat-in-ho-chi-minh-city","","","","",1510942734,0,"1.0",127,"1.47.1.28","","","e79b6917-0f69-4174-a0f8-9b6a93e16f0d",False,"","nkp314p16fudcdo5u64n5rjpag",1
+"","","","","","","","","","Blink","en_US","Chrome","browser","60.0","2017-11-17 18:17:13.421728+00:00","","","Windows - 10 - x64","generic-exit","lead","","exitIntentTrigger","","","","",1510942633,0,"1.0",126,"103.76.180.104","","","e5316257-23a5-4bf7-a3b8-8d05fd20ae49",False,"","cbk243vg6gm9sk3v4jtkh201td",1
+"","","","","","","","","","Blink","en_US","Chrome","browser","60.0","2017-11-17 18:13:00.161212+00:00","","","Windows - 10 - x64","","pageview","{u'publisher': {u'logo': {u'url': u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/logo-final-curve-version-06_1492741257_grande.png', u'@type': u'ImageObject'}, u'@type': u'Organization', u'name': u'Nilead'}, u'name': u'Living as an expat in Ho Chi Minh City', u'author': {u'@type': u'Person', u'name': u'Ivan Lamothe'}, u'headline': u'Living as an expat in Ho Chi Minh City', u'image': [u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-banner_1495975397_grande.jpg', u'https://cdn-na.mynilead.com/1bfa3120d5534256b3bf17c37565c435/assets/images/living-as-an-expat-in-ho-chi-minh-city-listing_1495975401_grande.jpg'], u'datePublished': u'2017-05-28T14:59:47+07:00', u'mainEntityOfPage': {u'@id': u'https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city', u'@type': u'WebPage'}, u'@type': u'Article', u'keywords': u'Expat, Ho Chi Minh City, Vietnam, Saigon, food, business,  web design, culture, tips, living', u'@context': u'http://schema.org', u'@id': u'https://nilead.com/article/living-as-an-expat-in-ho-chi-minh-city', u'dateModified': u'2017-05-29T17:16:05+07:00', u'description': u'My name is Ivan Lamothe, I am working in Ho Chi Minh City (the Southern capital of Vietnam) as the Creative Director of Nilead, a Digital Agency. I find my 2 years working here a wild ride with many ups and downs and many interesting experiences that I would love to share with my fellow designers who are working or planning to come here to work.'}","/article/living-as-an-expat-in-ho-chi-minh-city","","","","",1510942379,0,"1.0",125,"103.76.180.104","","","e5316257-23a5-4bf7-a3b8-8d05fd20ae49",False,"","cbk243vg6gm9sk3v4jtkh201td",1
 
 ```
 
