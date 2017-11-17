@@ -1,10 +1,10 @@
 
-Employee Schedules are generated from 7 weekday
+Employee Schedules
 ======
 
 `/store/1/employee/1/schedule`
 
-SCHEDULE OVERVIEW
+SCHEDULE OVERVIEW: Schedules are generated from 7 weekday
 
 ### Methods
 
@@ -51,7 +51,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:42 GMT
+Date: Fri, 17 Nov 2017 20:42:23 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -155,7 +155,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:42 GMT
+Date: Fri, 17 Nov 2017 20:42:24 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -197,7 +197,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:42 GMT
+Date: Fri, 17 Nov 2017 20:42:24 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -247,7 +247,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:43 GMT
+Date: Fri, 17 Nov 2017 20:42:24 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -357,7 +357,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:43 GMT
+Date: Fri, 17 Nov 2017 20:42:25 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked

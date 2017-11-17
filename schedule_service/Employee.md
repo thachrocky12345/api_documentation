@@ -73,7 +73,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:45 GMT
+Date: Fri, 17 Nov 2017 20:42:28 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -295,7 +295,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:45 GMT
+Date: Fri, 17 Nov 2017 20:42:29 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -377,7 +377,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:45 GMT
+Date: Fri, 17 Nov 2017 20:42:29 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -507,7 +507,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:46 GMT
+Date: Fri, 17 Nov 2017 20:42:30 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -592,7 +592,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:46 GMT
+Date: Fri, 17 Nov 2017 20:42:30 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -604,7 +604,7 @@ Vary: Origin
         "allow_backup": 2, 
         "break_time": 13, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:37:46.460842+00:00", 
+        "created": "2017-11-17T20:42:30.741233+00:00", 
         "email": "vuhoangnguyen@gmail.com", 
         "first_name": "Employee1", 
         "id": 20, 
@@ -615,78 +615,78 @@ Vary: Origin
             {
                 "available": true, 
                 "employee_id": 20, 
-                "id": 120, 
+                "id": 148, 
                 "iso_weekday_id": 1, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.431753+00:00", 
+                "updated": "2017-11-17T20:42:30.773621+00:00", 
                 "weekday": "Monday"
             }, 
             {
                 "available": true, 
                 "employee_id": 20, 
-                "id": 121, 
+                "id": 149, 
                 "iso_weekday_id": 2, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.431753+00:00", 
+                "updated": "2017-11-17T20:42:30.773621+00:00", 
                 "weekday": "Tuesday"
             }, 
             {
                 "available": true, 
                 "employee_id": 20, 
-                "id": 122, 
+                "id": 150, 
                 "iso_weekday_id": 3, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.431753+00:00", 
+                "updated": "2017-11-17T20:42:30.773621+00:00", 
                 "weekday": "Wednesday"
             }, 
             {
                 "available": true, 
                 "employee_id": 20, 
-                "id": 123, 
+                "id": 151, 
                 "iso_weekday_id": 4, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.431753+00:00", 
+                "updated": "2017-11-17T20:42:30.773621+00:00", 
                 "weekday": "Thursday"
             }, 
             {
                 "available": true, 
                 "employee_id": 20, 
-                "id": 124, 
+                "id": 152, 
                 "iso_weekday_id": 5, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.431753+00:00", 
+                "updated": "2017-11-17T20:42:30.773621+00:00", 
                 "weekday": "Friday"
             }, 
             {
                 "available": true, 
                 "employee_id": 20, 
-                "id": 125, 
+                "id": 153, 
                 "iso_weekday_id": 6, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.431753+00:00", 
+                "updated": "2017-11-17T20:42:30.773621+00:00", 
                 "weekday": "Saturday"
             }, 
             {
                 "available": true, 
                 "employee_id": 20, 
-                "id": 126, 
+                "id": 154, 
                 "iso_weekday_id": 7, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.431753+00:00", 
+                "updated": "2017-11-17T20:42:30.773621+00:00", 
                 "weekday": "Sunday"
             }
         ], 
         "session_in_minutes": 20, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T20:37:46.460842+00:00", 
+        "updated": "2017-11-17T20:42:30.741233+00:00", 
         "zipcode": 64118
     }, 
     {
@@ -694,7 +694,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:37:46.460842+00:00", 
+        "created": "2017-11-17T20:42:30.741233+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -705,78 +705,78 @@ Vary: Origin
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 127, 
+                "id": 155, 
                 "iso_weekday_id": 1, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Monday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 128, 
+                "id": 156, 
                 "iso_weekday_id": 2, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Tuesday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 129, 
+                "id": 157, 
                 "iso_weekday_id": 3, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Wednesday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 130, 
+                "id": 158, 
                 "iso_weekday_id": 4, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Thursday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 131, 
+                "id": 159, 
                 "iso_weekday_id": 5, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Friday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 132, 
+                "id": 160, 
                 "iso_weekday_id": 6, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Saturday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 133, 
+                "id": 161, 
                 "iso_weekday_id": 7, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Sunday"
             }
         ], 
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T20:37:46.460842+00:00", 
+        "updated": "2017-11-17T20:42:30.741233+00:00", 
         "zipcode": 64118
     }
 ]
@@ -827,7 +827,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:46 GMT
+Date: Fri, 17 Nov 2017 20:42:30 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -839,7 +839,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:37:46.460842+00:00", 
+        "created": "2017-11-17T20:42:30.741233+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -850,78 +850,78 @@ Vary: Origin
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 127, 
+                "id": 155, 
                 "iso_weekday_id": 1, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Monday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 128, 
+                "id": 156, 
                 "iso_weekday_id": 2, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Tuesday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 129, 
+                "id": 157, 
                 "iso_weekday_id": 3, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Wednesday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 130, 
+                "id": 158, 
                 "iso_weekday_id": 4, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Thursday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 131, 
+                "id": 159, 
                 "iso_weekday_id": 5, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Friday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 132, 
+                "id": 160, 
                 "iso_weekday_id": 6, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Saturday"
             }, 
             {
                 "available": true, 
                 "employee_id": 21, 
-                "id": 133, 
+                "id": 161, 
                 "iso_weekday_id": 7, 
                 "session_end": 17, 
                 "session_start": 9, 
-                "updated": "2017-11-17T20:17:17.433285+00:00", 
+                "updated": "2017-11-17T20:42:30.774584+00:00", 
                 "weekday": "Sunday"
             }
         ], 
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T14:37:46.692585+00:00", 
+        "updated": "2017-11-17T14:42:31.151511+00:00", 
         "zipcode": 64118
     }
 ]
@@ -962,7 +962,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 20:37:46 GMT
+Date: Fri, 17 Nov 2017 20:42:31 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -974,7 +974,7 @@ Vary: Origin
         "allow_backup": 2, 
         "break_time": 13, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:37:46.460842+00:00", 
+        "created": "2017-11-17T20:42:30.741233+00:00", 
         "email": "vuhoangnguyen@gmail.com", 
         "first_name": "Employee1", 
         "id": 20, 
@@ -984,7 +984,7 @@ Vary: Origin
         "session_in_minutes": 20, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T20:37:46.460842+00:00", 
+        "updated": "2017-11-17T20:42:30.741233+00:00", 
         "zipcode": 64118
     }, 
     {
@@ -992,7 +992,7 @@ Vary: Origin
         "allow_backup": 3, 
         "break_time": 12, 
         "city": "Gladstone", 
-        "created": "2017-11-17T20:37:46.460842+00:00", 
+        "created": "2017-11-17T20:42:30.741233+00:00", 
         "email": "thachrocky@icloud.com", 
         "first_name": "Employee2", 
         "id": 21, 
@@ -1002,7 +1002,7 @@ Vary: Origin
         "session_in_minutes": 30, 
         "state": "MO", 
         "store_id": 1, 
-        "updated": "2017-11-17T14:37:46.692585+00:00", 
+        "updated": "2017-11-17T14:42:31.151511+00:00", 
         "zipcode": 64118
     }
 ]

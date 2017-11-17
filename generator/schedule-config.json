@@ -6,8 +6,8 @@
     "endpoints": [
                     {
                           "endpoint_url": "/store/1/employee/1/schedule",
-                          "endpoint_description": "SCHEDULE OVERVIEW",
-                          "endpoint_title": "Employee Schedules are generated from 7 weekday",
+                          "endpoint_description": "SCHEDULE OVERVIEW: Schedules are generated from 7 weekday",
+                          "endpoint_title": "Employee Schedules",
                           "endpoint_parameter": "Schedule",
                           "display_url": "/store/1/employee/1/schedule",
                           "examples": [
