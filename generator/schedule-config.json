@@ -121,10 +121,10 @@
             "examples": [
                 {
                     "title": "List all store of a business including employees",
-                    "url": "/store/1/employee?limit=3&page=0",
+                    "url": "/store/1/employee?id=1&id=2",
                     "display_url": "/store/<store-id>/employee",
                     "method": "GET",
-                    "description": "List all store of a business including employees",
+                    "description": "List all Employee of a store including schedules",
                     "query_parameters": {
                             "search": {
                                 "type": "string",
