@@ -65,7 +65,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:20 GMT
+Date: Fri, 17 Nov 2017 19:58:10 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -216,7 +216,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:20 GMT
+Date: Fri, 17 Nov 2017 19:58:10 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -367,7 +367,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:20 GMT
+Date: Fri, 17 Nov 2017 19:58:10 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -377,13 +377,13 @@ Vary: Origin
     {
         "address": "7625 N Wabash Ave", 
         "city": "Gladstone", 
-        "created": "2017-11-17T19:50:20.616209+00:00", 
+        "created": "2017-11-17T19:58:10.865938+00:00", 
         "email": "thachrocky@icloud.com", 
         "id": 3, 
         "name": "StoreA", 
         "phone": "816-803-1523", 
         "state": "MO", 
-        "updated": "2017-11-17T19:50:20.616209+00:00", 
+        "updated": "2017-11-17T19:58:10.865938+00:00", 
         "zipcode": 64118
     }
 ]
@@ -428,7 +428,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:20 GMT
+Date: Fri, 17 Nov 2017 19:58:10 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -438,13 +438,13 @@ Vary: Origin
     {
         "address": "7625 N Wabash Ave", 
         "city": "Gladstone", 
-        "created": "2017-11-17T19:50:20.616209+00:00", 
+        "created": "2017-11-17T19:58:10.865938+00:00", 
         "email": "thachrocky@icloud.com", 
         "id": 3, 
         "name": "StoreTest", 
         "phone": "816-803-1523", 
         "state": "MO", 
-        "updated": "2017-11-17T13:50:20.693081+00:00", 
+        "updated": "2017-11-17T13:58:11.027682+00:00", 
         "zipcode": 64118
     }
 ]
@@ -480,7 +480,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:20 GMT
+Date: Fri, 17 Nov 2017 19:58:11 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -489,13 +489,13 @@ Vary: Origin
 {
     "address": "7625 N Wabash Ave", 
     "city": "Gladstone", 
-    "created": "2017-11-17T19:50:20.616209+00:00", 
+    "created": "2017-11-17T19:58:10.865938+00:00", 
     "email": "thachrocky@icloud.com", 
     "id": 3, 
     "name": "StoreTest", 
     "phone": "816-803-1523", 
     "state": "MO", 
-    "updated": "2017-11-17T13:50:20.693081+00:00", 
+    "updated": "2017-11-17T13:58:11.027682+00:00", 
     "zipcode": 64118
 }
 ```

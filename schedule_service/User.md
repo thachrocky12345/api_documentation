@@ -60,7 +60,7 @@ Parameter | Type | Description
 
 ### Example
 ```http
-GET http://localhost:1234/service/user
+GET http://localhost:1234/service/user?id=1&id=2
 Authorization: Basic dnVuZ3V5ZW46dnVuZ3V5ZW4xMjM0NSE=
 Host: localhost:1234
 Origin: http://localhost:1234/service
@@ -75,189 +75,13 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:19 GMT
+Date: Fri, 17 Nov 2017 19:58:08 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
 Vary: Origin
 
 [
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "vuhoangnguyen@gmail.com", 
-        "first_name": "VuOwner", 
-        "id": 10, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "test12345", 
-        "phone": "816-803-1523", 
-        "role": "OWNER", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen10", 
-        "zipcode": 64118
-    }, 
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "thach.bui@gmail.com", 
-        "first_name": "Customer9", 
-        "id": 9, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "test12345", 
-        "phone": "816-803-1523", 
-        "role": "CUSTOMER", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen9", 
-        "zipcode": 64118
-    }, 
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "thach.bui@gmail.com", 
-        "first_name": "Customer8", 
-        "id": 8, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "test12345", 
-        "phone": "816-803-1523", 
-        "role": "CUSTOMER", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen8", 
-        "zipcode": 64118
-    }, 
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "thach.bui@gmail.com", 
-        "first_name": "Customer7", 
-        "id": 7, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "test12345", 
-        "phone": "816-803-1523", 
-        "role": "CUSTOMER", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen7", 
-        "zipcode": 64118
-    }, 
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "thach.bui@gmail.com", 
-        "first_name": "CustomerD", 
-        "id": 6, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "test12345", 
-        "phone": "816-803-1523", 
-        "role": "CUSTOMER", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen6", 
-        "zipcode": 64118
-    }, 
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "thachrocky@icloud.com", 
-        "first_name": "CustomerC", 
-        "id": 5, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "test12345", 
-        "phone": "816-803-1523", 
-        "role": "CUSTOMER", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen5", 
-        "zipcode": 64118
-    }, 
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "thach@easy-store.company", 
-        "first_name": "CustomerA", 
-        "id": 4, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "test12345", 
-        "phone": "816-803-1523", 
-        "role": "CUSTOMER", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen4", 
-        "zipcode": 64118
-    }, 
-    {
-        "address": "8625 N Wabash Ave", 
-        "can_email": true, 
-        "can_text": true, 
-        "city": "Gladstone", 
-        "created": "2017-11-17T19:42:26.299243+00:00", 
-        "email": "thachrocky12345@gmail.com", 
-        "first_name": "CustomerA", 
-        "id": 3, 
-        "language": null, 
-        "last_login": "2017-11-17T19:42:26.299243+00:00", 
-        "last_name": "Nguyen", 
-        "password": "448ed7416fce2cb66c285d182b1ba3df1e90016d", 
-        "phone": "816-803-1523", 
-        "role": "EMPLOYEE", 
-        "social_network": null, 
-        "state": "MO", 
-        "token": null, 
-        "updated": "2017-11-17T19:42:26.299243+00:00", 
-        "username": "nguyen3", 
-        "zipcode": 64118
-    }, 
     {
         "address": "8625 N Wabash Ave", 
         "can_email": true, 
@@ -329,7 +153,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:19 GMT
+Date: Fri, 17 Nov 2017 19:58:09 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -426,7 +250,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:19 GMT
+Date: Fri, 17 Nov 2017 19:58:09 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -528,7 +352,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:19 GMT
+Date: Fri, 17 Nov 2017 19:58:09 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked
@@ -595,7 +419,7 @@ Access-Control-Allow-Origin: http://localhost:1234/service
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Fri, 17 Nov 2017 19:50:19 GMT
+Date: Fri, 17 Nov 2017 19:58:09 GMT
 Expires: 0
 Server: TwistedWeb/16.6.0
 Transfer-Encoding: chunked

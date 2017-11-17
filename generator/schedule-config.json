@@ -13,7 +13,7 @@
             "examples": [
                 {
                     "title": "List all user or clients of the business",
-                    "url": "/user",
+                    "url": "/user?id=1&id=2",
                     "display_url": "/user",
                     "method": "GET",
                     "description": "List all user or clients of the business",
